@@ -1,0 +1,13 @@
+id,name,type,latitude,longitude,demand,capacity
+WH1,Warehouse 1,warehouse,40.7128,-74.0060,0,1000
+WH2,Warehouse 2,warehouse,40.7589,-73.9851,0,800
+CUST1,Customer 1,customer,40.7282,-73.7949,50,0
+CUST2,Customer 2,customer,40.7505,-73.9934,30,0
+CUST3,Customer 3,customer,40.7614,-73.9776,25,0
+CUST4,Customer 4,customer,40.7282,-73.7949,40,0
+CUST5,Customer 5,customer,40.7505,-73.9934,35,0
+CUST6,Customer 6,customer,40.7614,-73.9776,20,0
+CUST7,Customer 7,customer,40.7282,-73.7949,45,0
+CUST8,Customer 8,customer,40.7505,-73.9934,28,0
+CUST9,Customer 9,customer,40.7614,-73.9776,32,0
+CUST10,Customer 10,customer,40.7282,-73.7949,38,0
