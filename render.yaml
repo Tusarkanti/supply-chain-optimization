@@ -1,0 +1,58 @@
+services:
+  # PostgreSQL Database
+  - type: pserv
+    name: supply-chain-db
+    env: postgres
+    databaseName: supply_chain
+    user: supply_user
+    password: ${DB_PASSWORD}
+    ipAllowList: [] # Only accessible by other services in this project
+
+  # Backend API Service
+  - type: web
+    name: supply-chain-backend
+    env: python
+    buildCommand: "pip install -r ml-service/requirements.txt"
+    startCommand: "gunicorn --bind 0.0.0.0:$PORT --workers 4 --worker-class gunicorn.workers.gfg app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.18
+      - key: DATABASE_URL
+        fromService:
+          type: pserv
+          name: supply-chain-db
+          property: connectionString
+      - key: FLASK_ENV
+        value: production
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: false
+      - key: PORT
+        value: 5000
+
+  # Frontend Service
+  - type: web
+    name: supply-chain-frontend
+    env: static
+    buildCommand: "cd frontend && npm install && npm run build"
+    staticPublishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        fromService:
+          type: web
+          name: supply-chain-backend
+          property: host
+      - key: NODE_ENV
+        value: production
+
+# Environment variables for all services
+envVarGroups:
+  - name: production
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: FLASK_ENV
+        value: production
+      - key: DEBUG
+        value: false

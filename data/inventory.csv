@@ -1,0 +1,11 @@
+product_id,warehouse_id,current_stock,reserved_stock,lead_time_days
+Product A,Warehouse 1,150,20,7
+Product B,Warehouse 1,25,5,5
+Product C,Warehouse 2,0,0,3
+Product D,Warehouse 1,75,10,4
+Product E,Warehouse 2,200,15,6
+Product F,Warehouse 1,45,8,5
+Product G,Warehouse 2,12,2,4
+Product H,Warehouse 1,89,12,7
+Product I,Warehouse 2,156,18,5
+Product J,Warehouse 1,34,6,6
