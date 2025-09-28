@@ -1,5 +1,8 @@
 import { io } from 'socket.io-client';
 
+// Use environment variable for API URL, fallback to localhost for development
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 class WebSocketService {
   constructor() {
     this.socket = null;
@@ -18,7 +21,7 @@ class WebSocketService {
       return;
     }
 
-    this.socket = io('http://localhost:5000', {
+    this.socket = io(API_BASE_URL, {
       auth: token ? { token } : {},
       transports: ['websocket'],
       autoConnect: false,
