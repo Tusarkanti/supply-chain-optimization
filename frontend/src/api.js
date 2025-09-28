@@ -1,7 +1,6 @@
-// frontend/src/services/api.js
 import axios from 'axios';
 
-// Use environment variable for API URL, fallback to localhost for development
+// Use environment variable for API URL, fallback to production backend
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://supply-chain-optimization-2.onrender.com';
 
 class ApiService {
@@ -73,116 +72,6 @@ class ApiService {
   }
 
   static async retrainDemandModel(productId, token, driftThreshold = 0.1) {
-    try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post(`${API_BASE_URL}/api/retrain-demand-model/${productId}`, { drift_threshold: driftThreshold }, config);
-      return response.data;
-    } catch (error) {
-      console.error('Error retraining demand model:', error);
-      throw error;
-    }
-  }
-
-  static async getInventoryAnalysis(token) {
-    try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.get(`${API_BASE_URL}/api/inventory-analysis`, config);
-      return response.data;
-    } catch (error) {
-      console.error('Error fetching inventory analysis:', error);
-      throw error;
-    }
-  }
-
-  static async placeOrder(orderData, token) {
-    try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post(`${API_BASE_URL}/api/place-order`, orderData, config);
-      return response.data;
-    } catch (error) {
-      console.error('Error placing order:', error);
-      throw error;
-    }
-  }
-
-  static async getLogisticsRoutes(token) {
-    try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.get(`${API_BASE_URL}/api/logistics-routes`, config);
-      return response.data;
-    } catch (error) {
-      console.error('Error fetching logistics routes:', error);
-      throw error;
-    }
-  }
-
-  static async optimizeRoute(routeId, criteria, token) {
-    try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post(`${API_BASE_URL}/api/optimize-route/${routeId}`, { optimization_criteria: criteria }, config);
-      return response.data;
-    } catch (error) {
-      console.error('Error optimizing route:', error);
-      throw error;
-    }
-  }
-
-  static async implementOptimization(optimizationData, token) {
-    try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post(`${API_BASE_URL}/api/implement-optimization`, optimizationData, config);
-      return response.data;
-    } catch (error) {
-      console.error('Error implementing optimization:', error);
-      throw error;
-    }
-  }
-
-  static async generateReport(reportType, reportData, token) {
-    try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post(`${API_BASE_URL}/api/reports/${reportType}`, reportData, config);
-      return response.data;
-    } catch (error) {
-      console.error('Error generating report:', error);
-      throw error;
-    }
-  }
-
-  static async multiEchelonOptimize(optimizationData, token) {
-    try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post(`${API_BASE_URL}/api/inventory/multi-echelon-optimize`, optimizationData, config);
-      return response.data;
-    } catch (error) {
-      console.error('Error performing multi-echelon optimization:', error);
-      throw error;
-    }
-  }
-
-  static async sendReorderAlert(alertData, token) {
-    try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post(`${API_BASE_URL}/api/inventory/send-reorder-alert`, alertData, config);
-      return response.data;
-    } catch (error) {
-      console.error('Error sending reorder alert:', error);
-      throw error;
-    }
-  }
-
-  static async getEtaEstimates(token) {
-    try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.get(`${API_BASE_URL}/api/eta-estimates`, config);
-      return response.data;
-    } catch (error) {
-      console.error('Error fetching ETA estimates:', error);
-      throw error;
-    }
-  }
-
-  static async getFuturisticMetrics(token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
       const response = await axios.get(`${API_BASE_URL}/api/futuristic-inventory/metrics`, config);
