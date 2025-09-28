@@ -317,7 +317,7 @@ function Login({ onLogin }) {
       </div>
 
       <footer className="login-footer">
-        <p>DEDICATED TO THE DEAREST FRD BUDDI 🥰</p>
+        <p>© 2024 SupplyChain Pro. All rights reserved.</p>
       </footer>
     </div>
   );
