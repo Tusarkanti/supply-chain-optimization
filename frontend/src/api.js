@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Use environment variable for API URL, fallback to production backend
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://supply-chain-optimization-2.onrender.com';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://supply-chain-optimization-v93t.onrender.com';
 
 class ApiService {
   static async getDashboardMetrics(token) {
@@ -39,7 +39,9 @@ class ApiService {
 
   static async login(credentials) {
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/login`, credentials);
+      const response = await axios.post(`${API_BASE_URL}/api/login`, credentials, {
+        headers: { 'Content-Type': 'application/json' }
+      });
       return response.data;
     } catch (error) {
       console.error('Error logging in:', error);
@@ -52,7 +54,9 @@ class ApiService {
 
   static async register(userData) {
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/register`, userData);
+      const response = await axios.post(`${API_BASE_URL}/api/register`, userData, {
+        headers: { 'Content-Type': 'application/json' }
+      });
       return response.data;
     } catch (error) {
       console.error('Error registering:', error);
@@ -92,7 +96,7 @@ class ApiService {
       if (isNaN(parsedProductId)) {
         throw new Error('Invalid product ID');
       }
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const config = token ? { headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' } } : { headers: { 'Content-Type': 'application/json' } };
       const response = await axios.post(`${API_BASE_URL}/api/retrain-demand-model/${parsedProductId}`, { drift_threshold: driftThreshold }, config);
       return response.data;
     } catch (error) {
@@ -140,7 +144,7 @@ class ApiService {
       if (isNaN(parsedRouteId)) {
         throw new Error('Invalid route ID');
       }
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const config = token ? { headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' } } : { headers: { 'Content-Type': 'application/json' } };
       const response = await axios.post(`${API_BASE_URL}/api/optimize-route/${parsedRouteId}`, { optimization_criteria: criteria }, config);
       return response.data;
     } catch (error) {
@@ -151,7 +155,7 @@ class ApiService {
 
   static async implementOptimization(data, token) {
     try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const config = token ? { headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' } } : { headers: { 'Content-Type': 'application/json' } };
       const response = await axios.post(`${API_BASE_URL}/api/implement-optimization`, data, config);
       return response.data;
     } catch (error) {
@@ -162,7 +166,7 @@ class ApiService {
 
   static async optimizeSustainability(optimizationData, token) {
     try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const config = token ? { headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' } } : { headers: { 'Content-Type': 'application/json' } };
       const response = await axios.post(`${API_BASE_URL}/api/futuristic-inventory/sustainability-optimize`, optimizationData, config);
       return response.data;
     } catch (error) {
@@ -173,7 +177,7 @@ class ApiService {
 
   static async assessSupplyChainRisks(riskData, token) {
     try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const config = token ? { headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' } } : { headers: { 'Content-Type': 'application/json' } };
       const response = await axios.post(`${API_BASE_URL}/api/futuristic-inventory/risk-assessment`, riskData, config);
       return response.data;
     } catch (error) {
@@ -184,7 +188,7 @@ class ApiService {
 
   static async predictDemandWithAI(predictionData, token) {
     try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const config = token ? { headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' } } : { headers: { 'Content-Type': 'application/json' } };
       const response = await axios.post(`${API_BASE_URL}/api/futuristic-inventory/predict-demand`, predictionData, config);
       return response.data;
     } catch (error) {
@@ -195,7 +199,7 @@ class ApiService {
 
   static async integrateIoTData(iotData, token) {
     try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const config = token ? { headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' } } : { headers: { 'Content-Type': 'application/json' } };
       const response = await axios.post(`${API_BASE_URL}/api/futuristic-inventory/iot-integration`, iotData, config);
       return response.data;
     } catch (error) {
@@ -206,7 +210,7 @@ class ApiService {
 
   static async makeAutonomousDecisions(decisionData, token) {
     try {
-      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const config = token ? { headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' } } : { headers: { 'Content-Type': 'application/json' } };
       const response = await axios.post(`${API_BASE_URL}/api/futuristic-inventory/autonomous-decisions`, decisionData, config);
       return response.data;
     } catch (error) {
