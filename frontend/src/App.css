@@ -1,124 +1,421 @@
+/* Global Reset for Layout Consistency */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Premium Black Theme Variables - Spread Across Full App */
+:root {
+  /* Subtle Neon Accents */
+  --neon-cyan: #00d4ff;
+  --neon-purple: #7c3aed;
+  --neon-blue: #1e40af;
+  --neon-green: #059669;
+  --neon-red: #dc2626;
+  --neon-yellow: #d97706;
+
+  /* Premium Black Theme */
+  --premium-black: #0f0f0f;
+  --glass-premium: rgba(15, 15, 15, 0.8);
+  --glass-border: rgba(0, 212, 255, 0.3);
+  --neon-border-glow: 0 0 5px rgba(0, 212, 255, 0.5), inset 0 0 5px rgba(0, 212, 255, 0.2);
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+
+  /* Typography */
+  --font-family-premium: 'Orbitron', sans-serif;
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  /* Premium Shadows & Subtle Glows */
+  --shadow-glow-subtle: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+  --shadow-glow-purple: 0 0 10px var(--neon-purple), 0 0 20px var(--neon-purple);
+  --shadow-glow-green: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+  --shadow-glow-red: 0 0 10px var(--neon-red), 0 0 20px var(--neon-red);
+  --shadow-glow-yellow: 0 0 10px var(--neon-yellow), 0 0 20px var(--neon-yellow);
+  --glass-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Inherit CSS variables from root */
 /* Main App Styles */
 .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #f5f5f5;
+  background: var(--premium-black);
+  font-family: var(--font-family-premium);
+  position: relative;
+  overflow-x: hidden;
+  color: var(--text-primary);
+}
+
+/* Premium Grid Background Spread Full Page */
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image:
+    linear-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .app-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: var(--glass-premium);
+  backdrop-filter: blur(20px);
+  color: var(--text-primary);
+  padding: var(--spacing-4);
+  box-shadow: var(--glass-shadow), var(--neon-border-glow);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, var(--neon-cyan), var(--neon-purple)) 1;
+  border-radius: var(--radius-lg);
+  margin: var(--spacing-4);
+  transition: all 0.3s ease;
+}
+
+.app-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="2" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>') repeat;
+  opacity: 0.5;
+}
+
+.app-header:hover {
+  box-shadow: var(--glass-shadow), 0 0 20px rgba(0, 212, 255, 0.6), inset 0 0 10px rgba(0, 212, 255, 0.2);
 }
 
 .app-header h1 {
   margin: 0;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(45deg, var(--neon-cyan), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: var(--shadow-glow-subtle);
+}
+
+.app-header h1::before {
+  content: '🚚';
+  font-size: 1.8rem;
 }
 
 .main-nav {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: var(--spacing-2);
+  margin-top: var(--spacing-3);
+  align-items: center;
 }
 
 .main-nav button {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  background: var(--glass-premium);
+  backdrop-filter: blur(20px);
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, var(--neon-cyan), var(--neon-purple)) 1;
+  color: var(--text-primary);
+  padding: var(--spacing-2) var(--spacing-3);
+  border-radius: var(--radius-md);
   cursor: pointer;
   transition: all 0.3s ease;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.95rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--neon-border-glow);
+  font-family: var(--font-family-premium);
+}
+
+.main-nav button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.main-nav button:hover::before,
+.main-nav button.active::before {
+  left: 100%;
 }
 
 .main-nav button:hover,
 .main-nav button.active {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-1px);
+  background: var(--glass-premium);
+  border-image: linear-gradient(45deg, var(--neon-purple), var(--neon-cyan)) 1;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-purple), var(--neon-border-glow);
 }
 
 .logout-btn {
-  background: rgba(255, 87, 87, 0.8) !important;
+  background: var(--glass-premium) !important;
   margin-left: auto;
+  color: var(--neon-red);
+  border-image: linear-gradient(45deg, var(--neon-red), var(--neon-purple)) 1 !important;
+  box-shadow: var(--shadow-glow-red), var(--neon-border-glow) !important;
 }
 
 .logout-btn:hover {
-  background: rgba(255, 87, 87, 1) !important;
+  background: var(--glass-premium) !important;
+  border-image: linear-gradient(45deg, var(--neon-red), var(--neon-cyan)) 1 !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-red), 0 0 15px var(--neon-red) !important;
 }
 
 .app-main {
   flex: 1;
-  padding: 2rem;
-  max-width: 1200px;
+  padding: var(--spacing-6);
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  z-index: 1;
+  position: relative;
 }
 
 .app-footer {
-  background: #333;
-  color: white;
+  background: var(--glass-premium);
+  backdrop-filter: blur(20px);
+  color: var(--text-primary);
   text-align: center;
-  padding: 1rem;
+  padding: var(--spacing-4);
   margin-top: auto;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, var(--neon-cyan), var(--neon-purple)) 1;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  box-shadow: var(--glass-shadow), var(--neon-border-glow);
+  font-family: var(--font-family-premium);
 }
 
 /* Common button styles */
 button {
-  font-family: inherit;
-  font-size: 0.9rem;
-  border: none;
-  border-radius: 4px;
+  font-family: var(--font-family-premium);
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, var(--neon-cyan), var(--neon-purple)) 1;
+  border-radius: var(--radius-md);
   cursor: pointer;
   transition: all 0.3s ease;
+  background: var(--glass-premium);
+  backdrop-filter: blur(20px);
+  color: var(--text-primary);
+  box-shadow: var(--neon-border-glow);
+  padding: var(--spacing-2) var(--spacing-3);
+}
+
+button:hover {
+  border-image: linear-gradient(45deg, var(--neon-purple), var(--neon-cyan)) 1;
+  box-shadow: var(--shadow-glow-purple), var(--neon-border-glow);
+  transform: translateY(-2px);
 }
 
 button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+  border-image: none;
+  box-shadow: none;
 }
 
 /* Utility classes */
 .error-message {
-  background: #ffebee;
-  color: #c62828;
-  padding: 1rem;
-  border-radius: 4px;
-  margin: 1rem 0;
-  border-left: 4px solid #c62828;
+  background: var(--glass-premium);
+  backdrop-filter: blur(20px);
+  color: var(--neon-red);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-md);
+  margin: var(--spacing-4) 0;
+  border-left: 4px solid var(--neon-red);
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, var(--neon-red), var(--neon-purple)) 1;
+  box-shadow: var(--shadow-glow-red), var(--neon-border-glow);
+  font-family: var(--font-family-premium);
 }
 
 .loading {
   text-align: center;
-  padding: 2rem;
-  color: #666;
+  padding: var(--spacing-6);
+  color: var(--neon-cyan);
+  font-size: 1.1rem;
+  background: var(--glass-premium);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow), var(--neon-border-glow);
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, var(--neon-cyan), var(--neon-blue)) 1;
+  font-family: var(--font-family-premium);
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
   .app-header {
-    padding: 1rem;
+    padding: var(--spacing-3);
+    margin: var(--spacing-2);
+  }
+
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    gap: var(--spacing-1);
+  }
+
+  .main-nav button {
+    padding: var(--spacing-2) var(--spacing-2);
+    font-size: 0.85rem;
+    width: 100%;
+  }
+
+  .app-main {
+    padding: var(--spacing-4);
+  }
+
+  .App::before {
+    background-size: 30px 30px; /* Smaller grid on mobile for better performance */
+  }
+}
+
+/* PWA and Mobile Enhancements */
+.install-prompt {
+  position: fixed;
+  bottom: var(--spacing-2);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--glass-premium);
+  backdrop-filter: blur(20px);
+  color: var(--text-primary);
+  padding: var(--spacing-3) var(--spacing-4);
+  border-radius: var(--radius-md);
+  box-shadow: var(--glass-shadow), var(--neon-border-glow);
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, var(--neon-green), var(--neon-cyan)) 1;
+  z-index: 1000;
+  display: none;
+  animation: slideUp 0.3s ease;
+  font-family: var(--font-family-premium);
+}
+
+.install-prompt.show {
+  display: block;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Enhanced Mobile Navigation */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    gap: var(--spacing-1);
+    padding: 0 var(--spacing-2);
+  }
+
+  .main-nav button {
+    width: 100%;
+    padding: var(--spacing-3);
+    font-size: 0.9rem;
+  }
+
+  /* Swipe gestures for navigation */
+  .app-main {
+    touch-action: pan-y;
   }
 
   .app-header h1 {
     font-size: 1.5rem;
   }
+}
 
-  .main-nav {
-    flex-wrap: wrap;
-    gap: 0.5rem;
+/* Dark mode support - Already premium black, enhance if needed */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --premium-black: #0a0a0a; /* Deeper black for dark mode */
+  }
+}
+
+/* PWA specific styles */
+@media (display-mode: standalone) {
+  .app-header {
+    padding-top: env(safe-area-inset-top);
   }
 
-  .main-nav button {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
+  .app-footer {
+    padding-bottom: env(safe-area-inset-bottom);
   }
+}
 
-  .app-main {
-    padding: 1rem;
-  }
+/* Loading states */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--glass-border);
+  border-top: 4px solid var(--neon-cyan);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  filter: drop-shadow(var(--shadow-glow-subtle));
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

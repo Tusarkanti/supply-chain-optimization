@@ -11,9 +11,14 @@
     "serve": "npm run build && npx serve -s build -l 80"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "jspdf": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "recharts": "^3.2.1",
+    "three": "^0.180.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "serve": "^14.2.1"

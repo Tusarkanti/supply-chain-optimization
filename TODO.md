@@ -1,38 +1,23 @@
-# Render.com Deployment TODO
+# Login Issue Correction Plan
 
-## Phase 1: Cleanup and Preparation ✅
-- [x] Delete unnecessary AWS deployment files (terraform/, aws-deployment.sh, .github/workflows/deploy.yml)
-- [x] Create render.yaml configuration file
-- [x] Optimize Dockerfiles for render.com environment
+## Tasks
+- [x] Remove account locking check from login endpoint in ml-service/app.py
+- [x] Remove failed attempt increment logic from login endpoint
+- [x] Fix password hashing consistency (use passlib for both set and check)
+- [x] Reset admin password with consistent hashing
+- [x] Test login functionality after changes
+- [x] Unlock any currently locked accounts using unlock_admin.py
 
-## Phase 2: Backend Configuration ✅
-- [x] Update ml-service/config.py for production environment
-- [x] Modify Dockerfile.backend for render.com
-- [x] Update requirements.txt to remove development dependencies
+## Information Gathered
+- Login system had account locking after 5 failed attempts for 15 minutes
+- User model had account_locked, failed_login_attempts, lockout_until fields
+- Login endpoint checked for lock and incremented attempts on wrong password
+- Password hashing was inconsistent: set_password used werkzeug, check_password used passlib
+- This caused login failures even with correct credentials
 
-## Phase 3: Frontend Configuration ✅
-- [x] Update frontend/package.json for production
-- [x] Modify Dockerfile.frontend for render.com
-- [x] Update API proxy configuration
-
-## Phase 4: Database Setup ✅
-- [x] Configure PostgreSQL service in render.yaml
-- [x] Set up database initialization
-- [x] Update database connection strings
-
-## Phase 5: Deployment Configuration ✅
-- [x] Create environment variables configuration
-- [x] Set up proper networking between services
-- [x] Configure health checks and monitoring
-
-## Phase 6: Documentation ✅
-- [x] Update README-DEPLOYMENT.md with render.com instructions
-- [x] Add troubleshooting guide
-- [x] Create deployment verification steps
-
-## Phase 7: Testing and Verification
-- [ ] Test local deployment with render.com CLI
-- [ ] Verify all services start correctly
-- [ ] Test API endpoints functionality
-- [ ] Test frontend-backend communication
-- [ ] Deploy to render.com and verify live functionality
+## Plan
+- Modify /api/login endpoint to remove is_account_locked() check
+- Remove increment_failed_attempts() call on wrong password
+- Update set_password() to use passlib for consistency
+- Reset admin password to use consistent hashing
+- Run unlock script to unlock any existing locked accounts

@@ -1,0 +1,2 @@
+2025-09-24 17:56:33,263 - supply_chain_ml - INFO - log_prediction:86 - Prediction made: {"event_type": "prediction", "model": "demand_forecast", "timestamp": "2025-09-24T17:56:33.263174", "input_data": {"data_path": "data/sales.csv"}}
+2025-09-24 17:56:41,076 - supply_chain_ml - INFO - log_prediction:86 - Prediction made: {"event_type": "prediction", "model": "demand_forecast", "timestamp": "2025-09-24T17:56:41.076699", "input_data": {"data_path": "data/sales.csv"}}

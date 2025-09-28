@@ -103,14 +103,33 @@ class AdvancedLogger:
         }
         self.security_logger.warning(f"Security event: {json.dumps(log_entry)}")
 
-    def log_error(self, error: Exception, context: str = None):
-        """Log errors with context"""
-        error_details = {
-            'error_type': type(error).__name__,
-            'error_message': str(error),
+    def log_info(self, message: str, context: str = None):
+        """Log informational messages"""
+        log_entry = {
+            'message': message,
             'context': context,
-            'traceback': str(error.__traceback__) if error.__traceback__ else None
+            'timestamp': datetime.now().isoformat()
         }
+        self.main_logger.info(f"Info: {json.dumps(log_entry)}")
+
+    def log_error(self, error, context: str = None):
+        """Log errors with context"""
+        # Handle both Exception objects and strings
+        if isinstance(error, Exception):
+            error_details = {
+                'error_type': type(error).__name__,
+                'error_message': str(error),
+                'context': context,
+                'traceback': str(error.__traceback__) if error.__traceback__ else None
+            }
+        else:
+            # Handle string errors
+            error_details = {
+                'error_type': 'Error',
+                'error_message': str(error),
+                'context': context,
+                'traceback': None
+            }
         self.main_logger.error(f"Error occurred: {json.dumps(error_details)}")
 
     def get_recent_logs(self, logger_name: str, lines: int = 100):

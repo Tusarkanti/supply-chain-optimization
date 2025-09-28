@@ -1,15 +1,9 @@
 {
-  "short_name": "Supply Chain",
-  "name": "Intelligent Supply Chain Optimization System",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
-  ],
-  "start_url": ".",
+  "name": "Supply Chain Optimization System",
+  "short_name": "SCOS",
+  "description": "Advanced supply chain optimization platform",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#1e3a8a",
+  "theme_color": "#0d9488"
 }

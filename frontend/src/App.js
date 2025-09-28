@@ -1,8 +1,13 @@
+// src/App.js
 import React, { useState, useEffect } from 'react';
 import Dashboard from './components/Dashboard';
-import ForecastForm from './components/ForecastForm';
-import InventoryTable from './components/InventoryTable';
+import DemandForecasting from './components/DemandForecasting';
+import InventoryManagement from './components/InventoryManagement';
+import LogisticsOptimization from './components/LogisticsOptimization';
+import Reporting from './components/Reporting';
 import Login from './components/Login';
+import Chatbot from './components/Chatbot';
+import ErrorBoundary from './ErrorBoundary';
 import './App.css';
 
 function App() {
@@ -11,6 +16,7 @@ function App() {
   const [token, setToken] = useState(null);
 
   useEffect(() => {
+    // Check for saved token on mount
     const savedToken = localStorage.getItem('token');
     if (savedToken) {
       setToken(savedToken);
@@ -18,16 +24,22 @@ function App() {
     }
   }, []);
 
-  const handleLogin = (newToken) => {
+  const handleLogin = (newToken, user = null) => {
+    // Store token and user data on login
     setToken(newToken);
     setIsAuthenticated(true);
     localStorage.setItem('token', newToken);
+    if (user) {
+      localStorage.setItem('user', JSON.stringify(user));
+    }
   };
 
   const handleLogout = () => {
+    // Clear authentication state and localStorage
     setToken(null);
     setIsAuthenticated(false);
     localStorage.removeItem('token');
+    localStorage.removeItem('user');
   };
 
   if (!isAuthenticated) {
@@ -63,6 +75,12 @@ function App() {
           >
             Logistics Optimization
           </button>
+          <button
+            className={activeTab === 'reporting' ? 'active' : ''}
+            onClick={() => setActiveTab('reporting')}
+          >
+            Reports
+          </button>
           <button className="logout-btn" onClick={handleLogout}>
             Logout
           </button>
@@ -70,19 +88,19 @@ function App() {
       </header>
 
       <main className="app-main">
-        {activeTab === 'dashboard' && <Dashboard token={token} />}
-        {activeTab === 'forecast' && <ForecastForm token={token} />}
-        {activeTab === 'inventory' && <InventoryTable token={token} />}
-        {activeTab === 'logistics' && (
-          <div className="logistics-section">
-            <h2>Logistics Optimization</h2>
-            <p>Route optimization functionality coming soon...</p>
-          </div>
-        )}
+        <ErrorBoundary>
+          {activeTab === 'dashboard' && <Dashboard token={token} />}
+          {activeTab === 'forecast' && <DemandForecasting token={token} />}
+          {activeTab === 'inventory' && <InventoryManagement token={token} />}
+          {activeTab === 'logistics' && <LogisticsOptimization token={token} />}
+          {activeTab === 'reporting' && <Reporting token={token} />}
+        </ErrorBoundary>
       </main>
 
+      <Chatbot />
+
       <footer className="app-footer">
-        <p>&copy; 2024 Supply Chain Optimization System. All rights reserved.</p>
+        <p>&copy; 2025 Supply Chain Optimization System. All rights reserved.</p>
       </footer>
     </div>
   );

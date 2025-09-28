@@ -11,12 +11,9 @@ class Config:
     TESTING = False
 
     # Database
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'postgresql://user:password@localhost/supply_chain_db'
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///supply_chain.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SQLALCHEMY_ENGINE_OPTIONS = {
-        'pool_pre_ping': True,
-        'pool_recycle': 300,
-    }
+    SQLALCHEMY_ENGINE_OPTIONS = {}
 
     # JWT
     JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY') or 'jwt-secret-key-change-in-production'
@@ -46,7 +43,7 @@ class Config:
 class DevelopmentConfig(Config):
     """Development configuration"""
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or 'sqlite:///supply_chain_dev.db'
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or 'sqlite:///../instance/supply_chain_dev.db'
 
 class TestingConfig(Config):
     """Testing configuration"""
@@ -65,8 +62,10 @@ class ProductionConfig(Config):
     SECRET_KEY = os.environ.get('SECRET_KEY')
     JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
 
-    if not SQLALCHEMY_DATABASE_URI or not SECRET_KEY or not JWT_SECRET_KEY:
-        raise ValueError("Production requires DATABASE_URL, SECRET_KEY, and JWT_SECRET_KEY environment variables")
+    def __init__(self):
+        super().__init__()
+        if not self.SQLALCHEMY_DATABASE_URI or not self.SECRET_KEY or not self.JWT_SECRET_KEY:
+            raise ValueError("Production requires DATABASE_URL, SECRET_KEY, and JWT_SECRET_KEY environment variables")
 
 # Configuration mapping
 config = {
@@ -79,6 +78,6 @@ config = {
 def get_config(config_name=None):
     """Get configuration object"""
     if config_name is None:
-        config_name = os.environ.get('FLASK_ENV', 'production')
+        config_name = os.environ.get('FLASK_ENV', 'development')
 
     return config.get(config_name, config['default'])()

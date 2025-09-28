@@ -7,3 +7,734 @@
 2025-09-24 13:33:21,647 - supply_chain_main - INFO - <module>:299 - Starting Supply Chain Optimization System
 2025-09-24 13:48:43,281 - supply_chain_main - INFO - <module>:302 - Starting Supply Chain Optimization System
 2025-09-24 13:49:21,007 - supply_chain_main - INFO - <module>:302 - Starting Supply Chain Optimization System
+2025-09-24 17:54:55,975 - supply_chain_main - INFO - <module>:302 - Starting Supply Chain Optimization System
+2025-09-24 17:55:01,309 - supply_chain_main - INFO - <module>:302 - Starting Supply Chain Optimization System
+2025-09-24 17:56:33,267 - supply_chain_main - ERROR - log_error:114 - Error occurred: {"error_type": "FileNotFoundError", "error_message": "[Errno 2] No such file or directory: 'data/sales.csv'", "context": "forecast_training", "traceback": "<traceback object at 0x000002ACE3703240>"}
+2025-09-24 17:56:41,077 - supply_chain_main - ERROR - log_error:114 - Error occurred: {"error_type": "FileNotFoundError", "error_message": "[Errno 2] No such file or directory: 'data/sales.csv'", "context": "forecast_training", "traceback": "<traceback object at 0x000002ACE36EDEC0>"}
+2025-09-24 17:56:52,172 - supply_chain_main - ERROR - log_error:114 - Error occurred: {"error_type": "ValueError", "error_message": "No trained model found for product: boots", "context": "demand_prediction", "traceback": "<traceback object at 0x000002ACE36C44C0>"}
+2025-09-24 18:01:33,597 - supply_chain_main - INFO - <module>:302 - Starting Supply Chain Optimization System
+2025-09-24 18:19:21,153 - supply_chain_main - INFO - <module>:302 - Starting Supply Chain Optimization System
+2025-09-24 18:22:59,944 - supply_chain_main - INFO - <module>:302 - Starting Supply Chain Optimization System
+2025-09-24 18:23:03,314 - supply_chain_main - INFO - <module>:302 - Starting Supply Chain Optimization System
+2025-09-24 18:39:02,922 - supply_chain_main - INFO - <module>:350 - Starting Supply Chain Optimization System
+2025-09-24 18:39:05,293 - supply_chain_main - INFO - <module>:350 - Starting Supply Chain Optimization System
+2025-09-24 18:41:13,058 - supply_chain_main - INFO - <module>:391 - Starting Supply Chain Optimization System
+2025-09-24 18:41:31,019 - supply_chain_main - INFO - <module>:390 - Starting Supply Chain Optimization System
+2025-09-24 18:41:46,136 - supply_chain_main - INFO - <module>:389 - Starting Supply Chain Optimization System
+2025-09-24 18:42:05,288 - supply_chain_main - INFO - <module>:444 - Starting Supply Chain Optimization System
+2025-09-24 18:45:59,336 - supply_chain_main - INFO - <module>:485 - Starting Supply Chain Optimization System
+2025-09-26 13:29:29,153 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 13:29:29,227 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T13:29:29.227178"}
+2025-09-26 13:29:29,237 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 13:29:31,143 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 13:29:31,226 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T13:29:31.226204"}
+2025-09-26 13:29:31,236 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 13:30:26,747 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-26T13:30:26.747027"}
+2025-09-26 13:30:26,782 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-26T13:30:26.782703"}
+2025-09-26 13:30:35,491 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Failed login attempt for user: admin@supplychain.com", "context": "authentication", "traceback": null}
+2025-09-26 13:30:46,633 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Failed login attempt for user: admin@supplychain.com", "context": "authentication", "traceback": null}
+2025-09-26 13:32:50,255 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 13:32:50,336 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T13:32:50.336695"}
+2025-09-26 13:33:16,842 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 13:33:16,954 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T13:33:16.954188"}
+2025-09-26 13:33:16,969 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 13:33:37,179 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 13:33:37,256 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T13:33:37.256493"}
+2025-09-26 13:33:37,268 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 13:34:15,054 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 13:34:15,126 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T13:34:15.125991"}
+2025-09-26 13:34:52,951 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Failed login attempt for user: admin@supplychain.com", "context": "authentication", "traceback": null}
+2025-09-26 13:35:05,213 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Failed login attempt for user: admin@supplychain.com", "context": "authentication", "traceback": null}
+2025-09-26 13:38:15,402 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Failed login attempt for user: admin@supplychain.com", "context": "authentication", "traceback": null}
+2025-09-26 13:40:28,232 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 13:40:28,313 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T13:40:28.313324"}
+2025-09-26 13:46:28,684 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 13:46:28,764 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T13:46:28.764244"}
+2025-09-26 13:46:28,776 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 13:46:30,612 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 13:46:30,699 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T13:46:30.699032"}
+2025-09-26 13:46:30,710 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 13:47:05,584 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Failed login attempt for user: admin@supplychain.com", "context": "authentication", "traceback": null}
+2025-09-26 13:51:23,311 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 13:51:23,382 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T13:51:23.382186"}
+2025-09-26 13:51:23,393 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 13:51:34,247 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 13:51:34,331 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T13:51:34.331355"}
+2025-09-26 13:52:18,651 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Failed login attempt for user: admin@supplychain.com", "context": "authentication", "traceback": null}
+2025-09-26 13:58:05,577 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Failed login attempt for user: admin@supplychain.com", "context": "authentication", "traceback": null}
+2025-09-26 14:00:12,884 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 14:00:12,964 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T14:00:12.964838"}
+2025-09-26 14:00:12,978 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 14:00:20,752 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 14:00:20,827 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T14:00:20.827617"}
+2025-09-26 14:00:59,843 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-26 14:01:59,225 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-26 16:55:57,466 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 16:55:57,541 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T16:55:57.541290"}
+2025-09-26 16:55:57,551 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 16:55:59,647 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 16:55:59,740 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T16:55:59.740588"}
+2025-09-26 16:55:59,753 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 19:06:48,806 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 19:06:48,862 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T19:06:48.862269"}
+2025-09-26 19:06:48,869 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 19:06:50,402 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 19:06:50,454 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T19:06:50.454725"}
+2025-09-26 19:06:50,463 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 19:51:07,261 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 19:51:07,346 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T19:51:07.346040"}
+2025-09-26 19:51:07,355 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 19:51:09,102 - supply_chain_main - INFO - <module>:65 - Initializing Supply Chain Optimization System
+2025-09-26 19:51:09,144 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T19:51:09.144571"}
+2025-09-26 19:51:09,151 - supply_chain_main - INFO - <module>:702 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 22:56:42,044 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-26 22:56:42,142 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T22:56:42.142902"}
+2025-09-26 22:57:05,303 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-26 22:57:05,376 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T22:57:05.376566"}
+2025-09-26 22:59:16,827 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-26 22:59:16,914 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T22:59:16.914299"}
+2025-09-26 22:59:16,924 - supply_chain_main - INFO - <module>:716 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 22:59:19,445 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-26 22:59:19,523 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T22:59:19.523403"}
+2025-09-26 22:59:19,536 - supply_chain_main - INFO - <module>:716 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 22:59:57,235 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-26T22:59:57.235209"}
+2025-09-26 22:59:57,310 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-26T22:59:57.310772"}
+2025-09-26 22:59:59,552 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-26T22:59:59.552341"}
+2025-09-26 23:00:00,560 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-26T23:00:00.560035"}
+2025-09-26 23:03:14,989 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-26T23:03:14.989240"}
+2025-09-26 23:03:15,051 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-26T23:03:15.051186"}
+2025-09-26 23:04:51,349 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-26 23:04:53,549 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-26 23:05:41,281 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-26 23:05:41,364 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T23:05:41.364815"}
+2025-09-26 23:05:41,376 - supply_chain_main - INFO - <module>:716 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 23:05:49,750 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-26 23:05:49,826 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-26T23:05:49.826820"}
+2025-09-26 23:05:49,838 - supply_chain_main - INFO - <module>:716 - Starting Supply Chain Optimization System with WebSocket
+2025-09-26 23:06:05,542 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-26 23:06:23,807 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-26 23:06:24,639 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-26 23:06:25,960 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-27 10:27:37,732 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 10:27:37,812 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T10:27:37.812330"}
+2025-09-27 10:27:37,823 - supply_chain_main - INFO - <module>:716 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 10:27:43,418 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 10:27:43,498 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T10:27:43.498524"}
+2025-09-27 10:27:43,510 - supply_chain_main - INFO - <module>:716 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 10:28:19,257 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-27 10:29:49,169 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 10:29:49,256 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T10:29:49.256211"}
+2025-09-27 10:30:37,802 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-27 10:30:38,956 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-27 10:30:46,963 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Login error: not a valid bcrypt hash", "context": "authentication", "traceback": null}
+2025-09-27 10:31:48,537 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 10:31:48,625 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T10:31:48.625040"}
+2025-09-27 10:31:48,638 - supply_chain_main - INFO - <module>:716 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 10:32:28,395 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Failed login attempt for user: admin@supplychain.com", "context": "authentication", "traceback": null}
+2025-09-27 10:32:42,728 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 10:32:42,822 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T10:32:42.822614"}
+2025-09-27 10:32:42,836 - supply_chain_main - INFO - <module>:716 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 10:32:45,877 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Failed login attempt for user: admin@supplychain.com", "context": "authentication", "traceback": null}
+2025-09-27 10:33:20,555 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 10:33:20,654 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T10:33:20.654851"}
+2025-09-27 10:33:56,333 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 10:33:56,416 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T10:33:56.416739"}
+2025-09-27 10:33:56,431 - supply_chain_main - INFO - <module>:716 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 10:34:52,204 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 10:34:52,297 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T10:34:52.297497"}
+2025-09-27 10:34:52,658 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-27T10:34:52.658160"}
+2025-09-27 10:35:15,946 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Failed login attempt for user: admin@supplychain.com", "context": "authentication", "traceback": null}
+2025-09-27 10:37:42,505 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-27T10:37:42.504996"}
+2025-09-27 10:37:43,026 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T10:37:43.026132"}
+2025-09-27 10:37:43,273 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T10:37:43.273088"}
+2025-09-27 10:39:44,026 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 10:39:44,098 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T10:39:44.098540"}
+2025-09-27 10:39:44,112 - supply_chain_main - INFO - <module>:761 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 10:41:03,102 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T10:41:03.102898"}
+2025-09-27 10:41:03,166 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T10:41:03.165993"}
+2025-09-27 10:41:40,709 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T10:41:40.709656"}
+2025-09-27 10:41:40,710 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: 'EnhancedDemandForecastingModule' object has no attribute 'get_forecast_summary'", "context": "demand_forecast", "traceback": null}
+2025-09-27 10:42:45,667 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 10:42:45,743 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T10:42:45.742863"}
+2025-09-27 10:42:45,756 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 10:43:58,859 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T10:43:58.859183"}
+2025-09-27 10:43:58,937 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T10:43:58.937105"}
+2025-09-27 10:45:54,249 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 10:45:54,328 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T10:45:54.328320"}
+2025-09-27 10:45:54,701 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-27T10:45:54.701162"}
+2025-09-27 11:22:25,192 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:22:25,268 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:22:25.268814"}
+2025-09-27 11:22:25,289 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:22:34,200 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:22:34,272 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:22:34.272847"}
+2025-09-27 11:22:34,285 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:23:02,892 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T11:23:02.892511"}
+2025-09-27 11:23:02,936 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T11:23:02.936817"}
+2025-09-27 11:23:03,289 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T11:23:03.289221"}
+2025-09-27 11:23:04,467 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T11:23:04.467134"}
+2025-09-27 11:23:49,863 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:23:49,949 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:23:49.949366"}
+2025-09-27 11:23:49,962 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:24:31,089 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:24:31,167 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:24:31.167719"}
+2025-09-27 11:24:31,183 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:25:17,096 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:25:17,184 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:25:17.184853"}
+2025-09-27 11:25:17,202 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:25:33,890 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:25:33,975 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:25:33.974985"}
+2025-09-27 11:25:33,989 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:26:17,661 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:26:17,750 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:26:17.750481"}
+2025-09-27 11:26:17,768 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:26:40,392 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:26:40,432 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:26:40.432085"}
+2025-09-27 11:26:40,441 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:30:18,054 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T11:30:18.054891"}
+2025-09-27 11:30:18,108 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T11:30:18.108639"}
+2025-09-27 11:30:29,704 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:30:29,752 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:30:29.752447"}
+2025-09-27 11:30:29,758 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:30:37,839 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:30:37,879 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:30:37.879454"}
+2025-09-27 11:30:37,885 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:49:28,969 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:49:29,060 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:49:29.059961"}
+2025-09-27 11:49:29,081 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:49:34,481 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:49:34,554 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:49:34.553999"}
+2025-09-27 11:49:34,573 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:50:47,657 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T11:50:47.657620"}
+2025-09-27 11:50:47,910 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T11:50:47.910146"}
+2025-09-27 11:51:40,676 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T11:51:40.675926"}
+2025-09-27 11:51:40,676 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: No trained model found for product: 1", "context": "demand_forecast", "traceback": null}
+2025-09-27 11:52:44,295 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:52:44,331 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:52:44.331900"}
+2025-09-27 11:52:44,338 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:58:49,341 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:58:49,376 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:58:49.376835"}
+2025-09-27 11:58:49,383 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:58:53,691 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:58:53,747 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:58:53.747626"}
+2025-09-27 11:58:53,758 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:59:37,816 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:59:37,935 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:59:37.935461"}
+2025-09-27 11:59:37,947 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 11:59:43,354 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 11:59:43,553 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T11:59:43.553531"}
+2025-09-27 11:59:43,564 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 12:00:09,268 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:00:09.268090"}
+2025-09-27 12:00:09,331 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:00:09.331506"}
+2025-09-27 12:00:28,737 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 12:00:28,825 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T12:00:28.825661"}
+2025-09-27 12:00:28,837 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 12:00:29,768 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:00:29.768556"}
+2025-09-27 12:00:29,769 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: No trained model found for product: 2", "context": "demand_forecast", "traceback": null}
+2025-09-27 12:01:22,576 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 12:01:22,613 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T12:01:22.613575"}
+2025-09-27 12:01:22,620 - supply_chain_main - INFO - <module>:787 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 12:01:57,333 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:01:57.333057"}
+2025-09-27 12:01:57,371 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:01:57.371515"}
+2025-09-27 12:02:02,876 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:02:02.876461"}
+2025-09-27 12:02:38,454 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:02:38.453960"}
+2025-09-27 12:02:38,715 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:02:38.715541"}
+2025-09-27 12:02:51,585 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:02:51.585012"}
+2025-09-27 12:06:32,351 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:06:32.351892"}
+2025-09-27 12:06:32,359 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: (sqlite3.IntegrityError) UNIQUE constraint failed: demand_forecasts.product_id, demand_forecasts.warehouse_id, demand_forecasts.forecast_date\n[SQL: INSERT INTO demand_forecasts (product_id, warehouse_id, forecast_date, predicted_demand, confidence_score, model_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id]\n[parameters: (1, 'default', '2025-09-28', 127, 0.95, 'Ensemble', '2025-09-27 06:36:32.356740')]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)", "context": "demand_forecast", "traceback": null}
+2025-09-27 12:06:37,973 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 3, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:06:37.973874"}
+2025-09-27 12:06:44,242 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:06:44.242701"}
+2025-09-27 12:06:44,247 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: (sqlite3.IntegrityError) UNIQUE constraint failed: demand_forecasts.product_id, demand_forecasts.warehouse_id, demand_forecasts.forecast_date\n[SQL: INSERT INTO demand_forecasts (product_id, warehouse_id, forecast_date, predicted_demand, confidence_score, model_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id]\n[parameters: (1, 'default', '2025-09-28', 97, 0.95, 'Ensemble', '2025-09-27 06:36:44.247006')]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)", "context": "demand_forecast", "traceback": null}
+2025-09-27 12:07:01,710 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:07:01.710786"}
+2025-09-27 12:07:01,716 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: (sqlite3.IntegrityError) UNIQUE constraint failed: demand_forecasts.product_id, demand_forecasts.warehouse_id, demand_forecasts.forecast_date\n[SQL: INSERT INTO demand_forecasts (product_id, warehouse_id, forecast_date, predicted_demand, confidence_score, model_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id]\n[parameters: (1, 'default', '2025-09-28', 128, 0.95, 'Ensemble', '2025-09-27 06:37:01.715940')]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)", "context": "demand_forecast", "traceback": null}
+2025-09-27 12:07:26,778 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:07:26.778466"}
+2025-09-27 12:07:26,783 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: (sqlite3.IntegrityError) UNIQUE constraint failed: demand_forecasts.product_id, demand_forecasts.warehouse_id, demand_forecasts.forecast_date\n[SQL: INSERT INTO demand_forecasts (product_id, warehouse_id, forecast_date, predicted_demand, confidence_score, model_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id]\n[parameters: (2, 'default', '2025-09-28', 107, 0.95, 'Ensemble', '2025-09-27 06:37:26.782480')]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)", "context": "demand_forecast", "traceback": null}
+2025-09-27 12:07:30,928 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 3, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:07:30.928266"}
+2025-09-27 12:07:30,934 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: (sqlite3.IntegrityError) UNIQUE constraint failed: demand_forecasts.product_id, demand_forecasts.warehouse_id, demand_forecasts.forecast_date\n[SQL: INSERT INTO demand_forecasts (product_id, warehouse_id, forecast_date, predicted_demand, confidence_score, model_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id]\n[parameters: (3, 'default', '2025-09-28', 101, 0.95, 'Ensemble', '2025-09-27 06:37:30.933530')]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)", "context": "demand_forecast", "traceback": null}
+2025-09-27 12:07:35,618 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:07:35.618781"}
+2025-09-27 12:07:35,882 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:07:35.882726"}
+2025-09-27 12:07:41,122 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:07:41.122688"}
+2025-09-27 12:07:41,128 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: (sqlite3.IntegrityError) UNIQUE constraint failed: demand_forecasts.product_id, demand_forecasts.warehouse_id, demand_forecasts.forecast_date\n[SQL: INSERT INTO demand_forecasts (product_id, warehouse_id, forecast_date, predicted_demand, confidence_score, model_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id]\n[parameters: (1, 'default', '2025-09-28', 78, 0.95, 'Ensemble', '2025-09-27 06:37:41.127963')]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)", "context": "demand_forecast", "traceback": null}
+2025-09-27 12:08:43,310 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 12:08:43,350 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T12:08:43.350281"}
+2025-09-27 12:08:43,356 - supply_chain_main - INFO - <module>:793 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 12:09:01,787 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:09:01.787579"}
+2025-09-27 12:09:01,819 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:09:01.819693"}
+2025-09-27 12:09:06,932 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:09:06.932659"}
+2025-09-27 12:09:11,428 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:09:11.428098"}
+2025-09-27 12:09:24,728 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:09:24.728677"}
+2025-09-27 12:28:58,359 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:28:58.359423"}
+2025-09-27 12:28:58,391 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:28:58.391857"}
+2025-09-27 12:29:11,353 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:29:11.353872"}
+2025-09-27 12:29:11,385 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:29:11.385870"}
+2025-09-27 12:29:47,968 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:29:47.967979"}
+2025-09-27 12:30:47,284 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:30:47.284588"}
+2025-09-27 12:30:47,948 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:30:47.948653"}
+2025-09-27 12:32:06,388 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:32:06.388906"}
+2025-09-27 12:32:08,608 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:32:08.608062"}
+2025-09-27 12:37:52,866 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:37:52.866328"}
+2025-09-27 12:42:36,791 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 12:42:36,883 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T12:42:36.883151"}
+2025-09-27 12:42:36,896 - supply_chain_main - INFO - <module>:793 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 12:48:29,366 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 12:48:29,406 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T12:48:29.406043"}
+2025-09-27 12:48:29,412 - supply_chain_main - INFO - <module>:809 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 12:48:55,590 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:48:55.590687"}
+2025-09-27 12:48:55,635 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T12:48:55.635705"}
+2025-09-27 12:49:02,716 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T12:49:02.716382"}
+2025-09-27 12:49:02,746 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demand forecast generated and cached for product 1", "context": "demand_forecast", "timestamp": "2025-09-27T12:49:02.746685"}
+2025-09-27 12:53:53,070 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 12:53:53,128 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T12:53:53.128416"}
+2025-09-27 12:53:53,141 - supply_chain_main - INFO - <module>:809 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 12:56:10,187 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 12:56:10,226 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T12:56:10.226919"}
+2025-09-27 12:56:10,233 - supply_chain_main - INFO - <module>:809 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 12:57:10,790 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 12:57:10,833 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Error seeding demo data: Could not determine join condition between parent/child tables on relationship Supplier.inventory_levels - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.", "context": "database", "traceback": null}
+2025-09-27 12:57:10,840 - supply_chain_main - INFO - <module>:809 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 12:57:25,181 - supply_chain_main - INFO - <module>:78 - Initializing Supply Chain Optimization System
+2025-09-27 12:57:25,225 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T12:57:25.225014"}
+2025-09-27 12:57:25,231 - supply_chain_main - INFO - <module>:809 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 13:05:20,503 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 13:05:20,549 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T13:05:20.548958"}
+2025-09-27 13:05:20,557 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 13:05:27,356 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 13:05:27,413 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T13:05:27.413465"}
+2025-09-27 13:05:27,423 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 13:06:10,718 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T13:06:10.718354"}
+2025-09-27 13:06:10,764 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T13:06:10.764324"}
+2025-09-27 13:06:11,036 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T13:06:11.036581"}
+2025-09-27 13:06:11,110 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T13:06:11.109905"}
+2025-09-27 13:10:29,071 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 13:10:29,112 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T13:10:29.112000"}
+2025-09-27 13:10:29,119 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 13:11:51,452 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 13:11:51,533 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T13:11:51.533582"}
+2025-09-27 13:11:51,547 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:27:18,041 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T17:27:18.041375"}
+2025-09-27 17:27:18,103 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T17:27:18.103401"}
+2025-09-27 17:27:27,309 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T17:27:27.309402"}
+2025-09-27 17:27:27,374 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demand forecast generated and cached for product 1", "context": "demand_forecast", "timestamp": "2025-09-27T17:27:27.374490"}
+2025-09-27 17:29:15,014 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:29:15,089 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:29:15.089316"}
+2025-09-27 17:29:15,103 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:30:13,955 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-27T17:30:13.955665"}
+2025-09-27 17:32:59,866 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:32:59,956 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:32:59.956031"}
+2025-09-27 17:32:59,971 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:33:42,389 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:33:42,508 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:33:42.507902"}
+2025-09-27 17:33:42,525 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:35:47,386 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:35:47,490 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:35:47.490069"}
+2025-09-27 17:35:47,506 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:36:14,148 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:36:14,294 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:36:14.294245"}
+2025-09-27 17:36:14,311 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:36:15,490 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T17:36:15.490582"}
+2025-09-27 17:36:15,566 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T17:36:15.566286"}
+2025-09-27 17:36:52,478 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:36:52,568 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:36:52.568266"}
+2025-09-27 17:36:52,584 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:38:01,289 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:38:01,372 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:38:01.372736"}
+2025-09-27 17:38:01,387 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:38:21,453 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:38:21,575 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:38:21.575469"}
+2025-09-27 17:38:21,594 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:39:08,093 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:39:08,183 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:39:08.183112"}
+2025-09-27 17:39:08,202 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:39:22,830 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:39:22,921 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:39:22.921504"}
+2025-09-27 17:39:22,938 - supply_chain_main - INFO - <module>:893 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:41:31,744 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:41:31,836 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:41:31.836190"}
+2025-09-27 17:41:31,861 - supply_chain_main - INFO - <module>:901 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:48:48,175 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:48:48,283 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:48:48.283881"}
+2025-09-27 17:48:48,350 - supply_chain_main - INFO - <module>:901 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:48:58,676 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 17:48:58,773 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T17:48:58.773747"}
+2025-09-27 17:48:58,798 - supply_chain_main - INFO - <module>:901 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 17:49:26,790 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T17:49:26.790784"}
+2025-09-27 17:49:26,848 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T17:49:26.848819"}
+2025-09-27 17:50:45,934 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-27T17:50:45.933961"}
+2025-09-27 17:51:02,797 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-27T17:51:02.797129"}
+2025-09-27 17:51:32,100 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-27T17:51:32.100723"}
+2025-09-27 17:51:34,163 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Sustainability optimization error: 'int' object has no attribute 'get'", "context": "futuristic_inventory", "traceback": null}
+2025-09-27 17:51:53,675 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-27T17:51:53.675437"}
+2025-09-27 17:52:44,172 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T17:52:44.171929"}
+2025-09-27 17:52:44,218 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T17:52:44.217964"}
+2025-09-27 18:04:59,164 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:04:59.164715"}
+2025-09-27 18:04:59,209 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:04:59.209266"}
+2025-09-27 18:07:10,117 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T18:07:10.117443"}
+2025-09-27 18:07:10,201 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demand forecast generated and cached for product 1", "context": "demand_forecast", "timestamp": "2025-09-27T18:07:10.201277"}
+2025-09-27 18:08:04,122 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:08:04,229 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:08:04.229510"}
+2025-09-27 18:08:04,255 - supply_chain_main - INFO - <module>:901 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:10:06,969 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:10:07,061 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:10:07.061446"}
+2025-09-27 18:10:07,083 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:10:23,568 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T18:10:23.568201"}
+2025-09-27 18:10:23,667 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demand forecast generated and cached for product 1", "context": "demand_forecast", "timestamp": "2025-09-27T18:10:23.667479"}
+2025-09-27 18:12:18,338 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:12:18,498 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:12:18.498411"}
+2025-09-27 18:12:18,546 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:12:37,352 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:12:37,497 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:12:37.497226"}
+2025-09-27 18:12:37,537 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:12:57,258 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:12:57,403 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:12:57.403815"}
+2025-09-27 18:12:57,445 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:13:22,549 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:13:22,695 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:13:22.695055"}
+2025-09-27 18:13:22,739 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:13:43,598 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:13:43,751 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:13:43.751299"}
+2025-09-27 18:13:43,803 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:14:03,944 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:14:04,105 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:14:04.105084"}
+2025-09-27 18:14:04,151 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:14:26,809 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:14:27,054 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:14:27.054881"}
+2025-09-27 18:14:27,138 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:14:44,734 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:14:44,914 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:14:44.914741"}
+2025-09-27 18:14:44,969 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:15:02,379 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:15:02,560 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:15:02.560620"}
+2025-09-27 18:15:02,610 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:15:18,810 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:15:18,935 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:15:18.935770"}
+2025-09-27 18:15:18,981 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:15:42,179 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:15:42,313 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:15:42.313014"}
+2025-09-27 18:15:42,369 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:15:55,700 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:15:55,845 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:15:55.844934"}
+2025-09-27 18:15:55,889 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:16:19,583 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:16:19,711 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:16:19.711507"}
+2025-09-27 18:16:19,748 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:16:37,771 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:16:37,904 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:16:37.904133"}
+2025-09-27 18:16:37,957 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:17:11,582 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:17:11,715 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:17:11.715716"}
+2025-09-27 18:17:11,771 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:17:37,037 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:17:37,129 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:17:37.129736"}
+2025-09-27 18:17:37,152 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:20:11,971 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:20:11.971205"}
+2025-09-27 18:20:12,034 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:20:12.034186"}
+2025-09-27 18:27:18,746 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:27:18,834 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:27:18.834119"}
+2025-09-27 18:27:18,856 - supply_chain_main - INFO - <module>:928 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:27:34,181 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:27:34.181331"}
+2025-09-27 18:27:34,244 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:27:34.244167"}
+2025-09-27 18:28:00,521 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:28:00,604 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:28:00.604799"}
+2025-09-27 18:28:00,626 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:32:30,858 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:32:30,936 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:32:30.936276"}
+2025-09-27 18:32:30,956 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:32:38,090 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:32:38,168 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:32:38.168532"}
+2025-09-27 18:32:38,187 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:32:55,789 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:32:55.789446"}
+2025-09-27 18:32:55,867 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:32:55.866955"}
+2025-09-27 18:32:58,196 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:32:58.196041"}
+2025-09-27 18:32:59,092 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:32:59.092810"}
+2025-09-27 18:33:08,071 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T18:33:08.071672"}
+2025-09-27 18:33:08,151 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demand forecast generated and cached for product 1", "context": "demand_forecast", "timestamp": "2025-09-27T18:33:08.151821"}
+2025-09-27 18:36:07,825 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:36:07,902 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:36:07.902598"}
+2025-09-27 18:36:07,922 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:37:17,301 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:37:17,392 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:37:17.391930"}
+2025-09-27 18:37:17,411 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:38:18,483 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:38:18,574 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:38:18.574565"}
+2025-09-27 18:38:18,600 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:39:32,945 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:39:33,033 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:39:33.033509"}
+2025-09-27 18:39:33,056 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:41:03,138 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:41:03,218 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:41:03.218433"}
+2025-09-27 18:41:03,237 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:41:10,963 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:41:11,082 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:41:11.082567"}
+2025-09-27 18:41:11,117 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:41:17,490 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:41:17.490171"}
+2025-09-27 18:41:17,552 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:41:17.552570"}
+2025-09-27 18:53:00,659 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:53:00,749 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:53:00.749637"}
+2025-09-27 18:53:00,777 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:53:26,257 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:53:26,373 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:53:26.373223"}
+2025-09-27 18:53:26,401 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:53:44,442 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 18:53:44,525 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T18:53:44.525751"}
+2025-09-27 18:53:44,549 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 18:55:57,408 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:55:57.408557"}
+2025-09-27 18:55:57,481 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T18:55:57.481678"}
+2025-09-27 19:02:15,419 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:02:15.419618"}
+2025-09-27 19:02:15,521 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:02:15.521824"}
+2025-09-27 19:10:24,025 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 19:10:24,118 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T19:10:24.117950"}
+2025-09-27 19:10:24,139 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 19:10:55,195 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 19:10:55,274 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T19:10:55.274448"}
+2025-09-27 19:10:55,293 - supply_chain_main - INFO - <module>:961 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 19:11:06,606 - supply_chain_main - INFO - <module>:86 - Initializing Supply Chain Optimization System
+2025-09-27 19:11:06,694 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T19:11:06.694235"}
+2025-09-27 19:11:06,719 - supply_chain_main - INFO - <module>:1125 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 19:11:25,621 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:11:25.621094"}
+2025-09-27 19:11:25,683 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:11:25.683091"}
+2025-09-27 19:13:48,684 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:13:48.684602"}
+2025-09-27 19:13:48,748 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:13:48.747933"}
+2025-09-27 19:14:22,663 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Route 1 optimized successfully with criteria: cost_and_time", "context": "route_optimization", "timestamp": "2025-09-27T19:14:22.663425"}
+2025-09-27 19:14:23,997 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Route 1 optimized successfully with criteria: cost_and_time", "context": "route_optimization", "timestamp": "2025-09-27T19:14:23.997853"}
+2025-09-27 19:14:25,325 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Route 1 optimized successfully with criteria: cost_and_time", "context": "route_optimization", "timestamp": "2025-09-27T19:14:25.325699"}
+2025-09-27 19:14:38,120 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Optimization implementation requested", "context": "optimization_implementation", "timestamp": "2025-09-27T19:14:38.120114"}
+2025-09-27 19:14:55,693 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:14:55.693074"}
+2025-09-27 19:14:55,740 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:14:55.740391"}
+2025-09-27 19:26:35,837 - supply_chain_main - INFO - <module>:81 - Initializing Supply Chain Optimization System
+2025-09-27 19:26:35,877 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T19:26:35.877216"}
+2025-09-27 19:26:35,891 - supply_chain_main - INFO - <module>:1120 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 19:26:38,385 - supply_chain_main - INFO - <module>:81 - Initializing Supply Chain Optimization System
+2025-09-27 19:26:38,430 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T19:26:38.430333"}
+2025-09-27 19:26:38,442 - supply_chain_main - INFO - <module>:1120 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 19:27:21,295 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:27:21.295575"}
+2025-09-27 19:27:21,337 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:27:21.337875"}
+2025-09-27 19:27:48,730 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:27:48.730759"}
+2025-09-27 19:27:49,000 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:27:49.000578"}
+2025-09-27 19:33:00,766 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:33:00.766001"}
+2025-09-27 19:33:00,811 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:33:00.811883"}
+2025-09-27 19:36:50,584 - supply_chain_main - INFO - <module>:81 - Initializing Supply Chain Optimization System
+2025-09-27 19:36:50,639 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T19:36:50.639011"}
+2025-09-27 19:36:50,653 - supply_chain_main - INFO - <module>:1163 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 19:40:55,028 - supply_chain_main - INFO - <module>:81 - Initializing Supply Chain Optimization System
+2025-09-27 19:40:55,084 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T19:40:55.084709"}
+2025-09-27 19:40:55,105 - supply_chain_main - INFO - <module>:1163 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 19:40:56,520 - supply_chain_main - INFO - <module>:81 - Initializing Supply Chain Optimization System
+2025-09-27 19:40:56,562 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T19:40:56.562670"}
+2025-09-27 19:40:56,572 - supply_chain_main - INFO - <module>:1163 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 19:42:38,678 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:42:38.678694"}
+2025-09-27 19:42:38,723 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:42:38.723166"}
+2025-09-27 19:44:06,802 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:44:06.802346"}
+2025-09-27 19:44:06,848 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:44:06.848137"}
+2025-09-27 19:44:07,113 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:44:07.113070"}
+2025-09-27 19:44:07,160 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:44:07.160915"}
+2025-09-27 19:44:20,504 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:44:20.504229"}
+2025-09-27 19:44:20,821 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:44:20.821926"}
+2025-09-27 19:44:20,822 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:44:20.822453"}
+2025-09-27 19:44:21,133 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:44:21.133665"}
+2025-09-27 19:44:21,134 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:44:21.134113"}
+2025-09-27 19:44:21,446 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:44:21.446527"}
+2025-09-27 19:44:21,446 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:44:21.446938"}
+2025-09-27 19:44:21,754 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:44:21.754907"}
+2025-09-27 19:45:32,744 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-27T19:45:32.744831"}
+2025-09-27 19:46:40,281 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:46:40.281429"}
+2025-09-27 19:46:40,345 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:46:40.345461"}
+2025-09-27 19:46:40,346 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:46:40.346257"}
+2025-09-27 19:46:40,587 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:46:40.587837"}
+2025-09-27 19:46:40,665 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:46:40.665894"}
+2025-09-27 19:46:40,712 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:46:40.711972"}
+2025-09-27 19:46:40,894 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:46:40.894663"}
+2025-09-27 19:46:41,069 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:46:41.069069"}
+2025-09-27 19:46:41,070 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:46:41.070372"}
+2025-09-27 19:46:41,378 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:46:41.378091"}
+2025-09-27 19:46:41,517 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:46:41.517941"}
+2025-09-27 19:46:41,690 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:46:41.690651"}
+2025-09-27 19:48:18,151 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:18.151605"}
+2025-09-27 19:48:18,153 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:18.153011"}
+2025-09-27 19:48:18,461 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:18.461794"}
+2025-09-27 19:48:18,463 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:18.463550"}
+2025-09-27 19:48:18,785 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:18.785296"}
+2025-09-27 19:48:18,786 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:18.786464"}
+2025-09-27 19:48:19,094 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:19.094230"}
+2025-09-27 19:48:19,094 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:19.094853"}
+2025-09-27 19:48:19,407 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:19.407450"}
+2025-09-27 19:48:19,408 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:19.408194"}
+2025-09-27 19:48:19,716 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:19.716370"}
+2025-09-27 19:48:19,717 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:19.717387"}
+2025-09-27 19:48:32,885 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:32.885452"}
+2025-09-27 19:48:32,900 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:32.900026"}
+2025-09-27 19:48:33,192 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:33.192392"}
+2025-09-27 19:48:33,208 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:33.208458"}
+2025-09-27 19:48:33,502 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:33.502218"}
+2025-09-27 19:48:33,518 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:33.518237"}
+2025-09-27 19:48:33,813 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:33.813729"}
+2025-09-27 19:48:33,828 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:33.828816"}
+2025-09-27 19:48:34,125 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:34.125635"}
+2025-09-27 19:48:34,140 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:34.140556"}
+2025-09-27 19:48:34,438 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:34.438217"}
+2025-09-27 19:48:34,453 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:34.453782"}
+2025-09-27 19:48:45,528 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:45.528400"}
+2025-09-27 19:48:45,582 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:45.582627"}
+2025-09-27 19:48:45,583 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T19:48:45.583315"}
+2025-09-27 19:48:45,840 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T19:48:45.840945"}
+2025-09-27 19:54:30,938 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T19:54:30.938496"}
+2025-09-27 19:54:30,939 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: 'EnhancedDemandForecastingModule' object has no attribute 'get_forecast_summary'", "context": "demand_forecast", "traceback": null}
+2025-09-27 19:54:32,591 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T19:54:32.591444"}
+2025-09-27 19:54:32,592 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: 'EnhancedDemandForecastingModule' object has no attribute 'get_forecast_summary'", "context": "demand_forecast", "traceback": null}
+2025-09-27 19:54:37,794 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 3, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T19:54:37.794223"}
+2025-09-27 19:54:37,794 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: 'EnhancedDemandForecastingModule' object has no attribute 'get_forecast_summary'", "context": "demand_forecast", "traceback": null}
+2025-09-27 19:57:09,412 - supply_chain_main - INFO - <module>:81 - Initializing Supply Chain Optimization System
+2025-09-27 19:57:09,487 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T19:57:09.487538"}
+2025-09-27 19:57:09,522 - supply_chain_main - INFO - <module>:1163 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 19:57:11,887 - supply_chain_main - INFO - <module>:81 - Initializing Supply Chain Optimization System
+2025-09-27 19:57:11,975 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T19:57:11.975653"}
+2025-09-27 19:57:11,995 - supply_chain_main - INFO - <module>:1163 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 20:35:02,250 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T20:35:02.250935"}
+2025-09-27 20:35:02,374 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T20:35:02.374079"}
+2025-09-27 20:35:02,375 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T20:35:02.375497"}
+2025-09-27 20:35:02,559 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T20:35:02.559206"}
+2025-09-27 20:35:10,959 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T20:35:10.959528"}
+2025-09-27 20:35:10,959 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: 'EnhancedDemandForecastingModule' object has no attribute 'get_forecast_summary'", "context": "demand_forecast", "traceback": null}
+2025-09-27 20:37:26,246 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Route 1 optimized successfully with criteria: cost_and_time", "context": "route_optimization", "timestamp": "2025-09-27T20:37:26.246326"}
+2025-09-27 20:37:26,507 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Route 1 optimized successfully with criteria: cost_and_time", "context": "route_optimization", "timestamp": "2025-09-27T20:37:26.507938"}
+2025-09-27 20:42:48,909 - supply_chain_main - INFO - <module>:81 - Initializing Supply Chain Optimization System
+2025-09-27 20:42:48,952 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T20:42:48.952342"}
+2025-09-27 20:42:48,965 - supply_chain_main - INFO - <module>:1163 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 20:57:57,006 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 20:57:57,064 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T20:57:57.064189"}
+2025-09-27 20:57:57,078 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 20:58:03,484 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 20:58:03,597 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T20:58:03.597523"}
+2025-09-27 20:58:03,667 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 20:59:00,402 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T20:59:00.402290"}
+2025-09-27 20:59:00,463 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T20:59:00.463821"}
+2025-09-27 20:59:00,469 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T20:59:00.469327"}
+2025-09-27 20:59:00,714 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T20:59:00.714893"}
+2025-09-27 20:59:12,105 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T20:59:12.105753"}
+2025-09-27 20:59:12,199 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demand forecast generated and cached for product 1", "context": "demand_forecast", "timestamp": "2025-09-27T20:59:12.199338"}
+2025-09-27 20:59:13,808 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Retraining demand model for product 1 requested by admin@supplychain.com", "context": "model_retraining", "timestamp": "2025-09-27T20:59:13.808244"}
+2025-09-27 20:59:13,815 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Model retraining error for product 1: 'EnhancedDemandForecastingModule' object has no attribute 'retrain_models_automated'", "context": "model_retraining", "traceback": null}
+2025-09-27 21:00:31,768 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:00:31,871 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:00:31.870883"}
+2025-09-27 21:00:31,901 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:00:45,918 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:00:45,994 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:00:45.994878"}
+2025-09-27 21:00:46,026 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:00:51,632 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:00:51.632125"}
+2025-09-27 21:00:51,696 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:00:51.696219"}
+2025-09-27 21:00:51,698 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:00:51.698796"}
+2025-09-27 21:00:51,956 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:00:51.956648"}
+2025-09-27 21:00:57,411 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T21:00:57.410908"}
+2025-09-27 21:00:57,412 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: expected non-empty vector for x", "context": "demand_forecast", "traceback": null}
+2025-09-27 21:01:00,307 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T21:01:00.307213"}
+2025-09-27 21:01:00,308 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: expected non-empty vector for x", "context": "demand_forecast", "traceback": null}
+2025-09-27 21:01:04,715 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T21:01:04.715420"}
+2025-09-27 21:01:04,716 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: expected non-empty vector for x", "context": "demand_forecast", "traceback": null}
+2025-09-27 21:01:06,561 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Retraining demand model for product 1 requested by admin@supplychain.com", "context": "model_retraining", "timestamp": "2025-09-27T21:01:06.560961"}
+2025-09-27 21:01:06,564 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Model retraining error for product 1: [Errno 2] No such file or directory: 'data/sales.csv'", "context": "model_retraining", "traceback": null}
+2025-09-27 21:01:36,265 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:01:36.265080"}
+2025-09-27 21:01:36,585 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:01:36.585587"}
+2025-09-27 21:01:36,756 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:01:36.756531"}
+2025-09-27 21:01:36,908 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:01:36.907946"}
+2025-09-27 21:01:43,266 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T21:01:43.265944"}
+2025-09-27 21:01:43,267 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: expected non-empty vector for x", "context": "demand_forecast", "traceback": null}
+2025-09-27 21:03:24,871 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:03:24,957 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:03:24.957162"}
+2025-09-27 21:03:24,987 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:03:55,176 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:03:55,254 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:03:55.254719"}
+2025-09-27 21:03:55,284 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:04:29,736 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:04:29,815 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:04:29.815182"}
+2025-09-27 21:04:29,842 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:05:00,062 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:05:00,141 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:05:00.141421"}
+2025-09-27 21:05:00,167 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:05:25,640 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:05:25,744 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:05:25.744781"}
+2025-09-27 21:05:25,805 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:05:26,004 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:05:26.004552"}
+2025-09-27 21:05:26,302 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:05:26.302350"}
+2025-09-27 21:05:26,317 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:05:26.317889"}
+2025-09-27 21:05:26,625 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:05:26.625899"}
+2025-09-27 21:05:52,279 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T21:05:52.279191"}
+2025-09-27 21:05:52,280 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: expected non-empty vector for x", "context": "demand_forecast", "traceback": null}
+2025-09-27 21:07:09,274 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T21:07:09.274454"}
+2025-09-27 21:07:09,275 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: expected non-empty vector for x", "context": "demand_forecast", "traceback": null}
+2025-09-27 21:07:11,487 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Retraining demand model for product 2 requested by admin@supplychain.com", "context": "model_retraining", "timestamp": "2025-09-27T21:07:11.487172"}
+2025-09-27 21:07:11,541 - supply_chain_main - INFO - log_info:113 - Info: {"message": "No retraining needed for product 2: insufficient_data", "context": "model_retraining", "timestamp": "2025-09-27T21:07:11.541454"}
+2025-09-27 21:07:52,683 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:07:52,814 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:07:52.814807"}
+2025-09-27 21:07:52,868 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:08:10,648 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:08:10,768 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:08:10.767607"}
+2025-09-27 21:08:10,811 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:08:52,379 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:08:52,542 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:08:52.542556"}
+2025-09-27 21:08:52,595 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:09:12,244 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:09:12,367 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:09:12.367611"}
+2025-09-27 21:09:12,413 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:09:12,975 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:09:12.974984"}
+2025-09-27 21:09:12,978 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:09:12.978811"}
+2025-09-27 21:09:13,335 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:09:13.334987"}
+2025-09-27 21:09:13,343 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:09:13.343522"}
+2025-09-27 21:09:29,426 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:09:29,560 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:09:29.559889"}
+2025-09-27 21:09:29,612 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:09:46,084 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:09:46,210 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:09:46.210735"}
+2025-09-27 21:09:46,262 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:10:02,144 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:10:02,292 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:10:02.292750"}
+2025-09-27 21:10:02,377 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:10:18,900 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:10:19,056 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:10:19.055961"}
+2025-09-27 21:10:19,121 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:10:32,837 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:10:32,991 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:10:32.991266"}
+2025-09-27 21:10:33,162 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:11:04,060 - supply_chain_main - INFO - <module>:82 - Initializing Supply Chain Optimization System
+2025-09-27 21:11:04,297 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T21:11:04.297181"}
+2025-09-27 21:11:04,363 - supply_chain_main - INFO - <module>:1187 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 21:11:05,106 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:11:05.106663"}
+2025-09-27 21:11:05,112 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:11:05.112368"}
+2025-09-27 21:11:05,456 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:11:05.456221"}
+2025-09-27 21:11:05,465 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:11:05.465496"}
+2025-09-27 21:17:32,069 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-27T21:17:32.069057"}
+2025-09-27 21:22:00,508 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:22:00.508871"}
+2025-09-27 21:22:00,570 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:22:00.570107"}
+2025-09-27 21:22:00,573 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:22:00.573063"}
+2025-09-27 21:22:00,828 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:22:00.828483"}
+2025-09-27 21:22:00,889 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:22:00.889591"}
+2025-09-27 21:22:01,104 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:22:01.104870"}
+2025-09-27 21:22:01,501 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:22:01.501217"}
+2025-09-27 21:22:01,816 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:22:01.816262"}
+2025-09-27 21:22:24,142 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T21:22:24.142839"}
+2025-09-27 21:22:24,143 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: expected non-empty vector for x", "context": "demand_forecast", "traceback": null}
+2025-09-27 21:22:25,746 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T21:22:25.746193"}
+2025-09-27 21:22:25,747 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: expected non-empty vector for x", "context": "demand_forecast", "traceback": null}
+2025-09-27 21:22:27,920 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Retraining demand model for product 2 requested by admin@supplychain.com", "context": "model_retraining", "timestamp": "2025-09-27T21:22:27.920563"}
+2025-09-27 21:22:27,998 - supply_chain_main - INFO - log_info:113 - Info: {"message": "No retraining needed for product 2: insufficient_data", "context": "model_retraining", "timestamp": "2025-09-27T21:22:27.998354"}
+2025-09-27 21:22:36,956 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T21:22:36.956409"}
+2025-09-27 21:22:36,957 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: expected non-empty vector for x", "context": "demand_forecast", "traceback": null}
+2025-09-27 21:26:10,030 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:26:10.029998"}
+2025-09-27 21:26:10,091 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:26:10.091765"}
+2025-09-27 21:26:10,093 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T21:26:10.093893"}
+2025-09-27 21:26:10,340 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T21:26:10.340337"}
+2025-09-27 21:26:15,858 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 2, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-27T21:26:15.858395"}
+2025-09-27 21:26:15,859 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Demand forecast GET error: expected non-empty vector for x", "context": "demand_forecast", "traceback": null}
+2025-09-27 23:10:26,384 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Startup training error: 'location'", "context": "model_training", "traceback": null}
+2025-09-27 23:10:26,384 - supply_chain_main - INFO - <module>:110 - Initializing Supply Chain Optimization System
+2025-09-27 23:10:26,428 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T23:10:26.428465"}
+2025-09-27 23:10:26,443 - supply_chain_main - INFO - <module>:1243 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 23:10:29,688 - supply_chain_main - ERROR - log_error:133 - Error occurred: {"error_type": "Error", "error_message": "Startup training error: 'location'", "context": "model_training", "traceback": null}
+2025-09-27 23:10:29,688 - supply_chain_main - INFO - <module>:110 - Initializing Supply Chain Optimization System
+2025-09-27 23:10:29,758 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T23:10:29.758730"}
+2025-09-27 23:10:29,789 - supply_chain_main - INFO - <module>:1243 - Starting Supply Chain Optimization System with WebSocket
+2025-09-27 23:11:07,476 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-27T23:11:07.475412"}
+2025-09-27 23:11:08,059 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T23:11:08.059843"}
+2025-09-27 23:11:08,381 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T23:11:08.380895"}
+2025-09-27 23:11:08,688 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-27T23:11:08.687942"}
+2025-09-27 23:11:08,698 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-27T23:11:08.698014"}
+2025-09-27 23:17:15,227 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Models trained successfully on startup", "context": "model_training", "timestamp": "2025-09-27T23:17:15.226910"}
+2025-09-27 23:17:15,228 - supply_chain_main - INFO - <module>:110 - Initializing Supply Chain Optimization System
+2025-09-27 23:17:15,317 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-27T23:17:15.317171"}

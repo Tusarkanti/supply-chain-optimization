@@ -8,7 +8,7 @@ services:
     password: ${DB_PASSWORD}
     ipAllowList: []
 
-  # Backend API Service
+  # Backend API Serviceyyyy
   - type: web
     name: supply-chain-backend
     env: python

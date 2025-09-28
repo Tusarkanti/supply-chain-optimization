@@ -1,6 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from enum import Enum
+import secrets
 
 db = SQLAlchemy()
 
@@ -65,6 +66,7 @@ class Inventory(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)
     warehouse_id = db.Column(db.Integer, db.ForeignKey('warehouses.id'), nullable=False)
+    supplier_id = db.Column(db.Integer, db.ForeignKey('suppliers.id'), nullable=True)
     current_stock = db.Column(db.Integer, nullable=False, default=0)
     reserved_stock = db.Column(db.Integer, nullable=False, default=0)
     available_stock = db.Column(db.Integer, nullable=False, default=0)
@@ -206,3 +208,123 @@ class RouteStop(db.Model):
     departure_time = db.Column(db.DateTime)
     distance_from_previous = db.Column(db.Float)
     load_quantity = db.Column(db.Integer, default=0)
+
+class Supplier(db.Model):
+    __tablename__ = 'suppliers'
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    code = db.Column(db.String(20), unique=True, nullable=False)
+    contact_email = db.Column(db.String(100))
+    contact_phone = db.Column(db.String(20))
+    address = db.Column(db.Text)
+    city = db.Column(db.String(50))
+    state = db.Column(db.String(50))
+    country = db.Column(db.String(50))
+    postal_code = db.Column(db.String(20))
+    latitude = db.Column(db.Float)
+    longitude = db.Column(db.Float)
+    # KPIs
+    on_time_delivery_rate = db.Column(db.Float, default=0.0)  # Percentage (0-1)
+    lead_time_variance = db.Column(db.Float, default=0.0)  # Days
+    order_accuracy_rate = db.Column(db.Float, default=0.0)  # Percentage (0-1)
+    quality_rating = db.Column(db.Float, default=0.0)  # 1-5 scale
+    scorecard_score = db.Column(db.Float, default=0.0)  # Overall score (0-100)
+    total_orders = db.Column(db.Integer, default=0)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    # Relationships
+    inventory_levels = db.relationship('Inventory', backref='supplier', lazy=True)
+
+class Alert(db.Model):
+    __tablename__ = 'alerts'
+
+    id = db.Column(db.Integer, primary_key=True)
+    alert_type = db.Column(db.String(50), nullable=False)  # reorder, stockout, supplier_risk
+    product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)
+    warehouse_id = db.Column(db.Integer, db.ForeignKey('warehouses.id'), nullable=False)
+    supplier_id = db.Column(db.Integer, db.ForeignKey('suppliers.id'), nullable=True)
+    message = db.Column(db.Text, nullable=False)
+    severity = db.Column(db.String(20), default='medium')  # low, medium, high, critical
+    status = db.Column(db.String(20), default='active')  # active, acknowledged, resolved
+    sent_at = db.Column(db.DateTime, nullable=True)
+    acknowledged_at = db.Column(db.DateTime, nullable=True)
+    resolved_at = db.Column(db.DateTime, nullable=True)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+class User(db.Model):
+    __tablename__ = 'users'
+
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(120), unique=True, nullable=False, index=True)
+    name = db.Column(db.String(100), nullable=False)
+    password_hash = db.Column(db.String(255), nullable=False)
+    two_factor_secret = db.Column(db.String(32), nullable=True)
+    two_factor_enabled = db.Column(db.Boolean, default=False)
+    email_verified = db.Column(db.Boolean, default=False)
+    account_locked = db.Column(db.Boolean, default=False)
+    failed_login_attempts = db.Column(db.Integer, default=0)
+    lockout_until = db.Column(db.DateTime, nullable=True)
+    last_login = db.Column(db.DateTime, nullable=True)
+    password_changed_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def set_password(self, password):
+        """Set password hash using passlib"""
+        from passlib.hash import bcrypt
+        self.password_hash = bcrypt.hash(password)
+
+    def check_password(self, password):
+        """Check password against hash"""
+        if not self.password_hash:
+            return False
+        from passlib.hash import bcrypt
+        try:
+            return bcrypt.verify(password, self.password_hash)
+        except ValueError:
+            return False
+
+    def generate_two_factor_secret(self):
+        """Generate a random secret for 2FA"""
+        self.two_factor_secret = secrets.token_hex(16)
+        return self.two_factor_secret
+
+    def is_account_locked(self):
+        """Check if account is currently locked"""
+        if not self.account_locked:
+            return False
+        if self.lockout_until and datetime.utcnow() > self.lockout_until:
+            self.account_locked = False
+            self.failed_login_attempts = 0
+            return False
+        return True
+
+    def increment_failed_attempts(self):
+        """Increment failed login attempts and lock account if necessary"""
+        self.failed_login_attempts += 1
+        if self.failed_login_attempts >= 5:  # Lock after 5 failed attempts
+            self.account_locked = True
+            from datetime import timedelta
+            self.lockout_until = datetime.utcnow() + timedelta(minutes=15)
+        return self.is_account_locked()
+
+    def reset_failed_attempts(self):
+        """Reset failed login attempts on successful login"""
+        self.failed_login_attempts = 0
+        self.account_locked = False
+        self.lockout_until = None
+        self.last_login = datetime.utcnow()
+
+    def to_dict(self):
+        """Convert user to dictionary for API responses"""
+        return {
+            'id': self.id,
+            'email': self.email,
+            'name': self.name,
+            'two_factor_enabled': self.two_factor_enabled,
+            'email_verified': self.email_verified,
+            'last_login': self.last_login.isoformat() if self.last_login else None,
+            'created_at': self.created_at.isoformat()
+        }

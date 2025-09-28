@@ -242,3 +242,88 @@ class InventoryManagementModule:
         }
 
         return simulation_results
+
+    def optimize_multi_echelon_inventory_pulp(self, warehouses: List[Dict], products: List[Dict], 
+                                            demand_forecasts: Dict, supplier_data: Dict) -> Dict[str, Any]:
+        """Optimize multi-echelon inventory using PuLP"""
+        try:
+            from pulp import LpProblem, LpVariable, LpMinimize, lpSum, LpStatus, value
+        except ImportError:
+            return {
+                'success': False,
+                'error': 'PuLP library not available. Install with: pip install pulp'
+            }
+
+        # Create optimization problem
+        prob = LpProblem("Multi_Echelon_Inventory_Optimization", LpMinimize)
+
+        # Decision variables
+        # Inventory levels at each warehouse for each product
+        inventory_vars = {}
+        for warehouse in warehouses:
+            for product in products:
+                var_name = f"inv_{warehouse['id']}_{product['id']}"
+                inventory_vars[(warehouse['id'], product['id'])] = LpVariable(var_name, 0, None)
+
+        # Transport variables between warehouses
+        transport_vars = {}
+        for i, wh1 in enumerate(warehouses):
+            for j, wh2 in enumerate(warehouses):
+                if i != j:
+                    for product in products:
+                        var_name = f"trans_{wh1['id']}_{wh2['id']}_{product['id']}"
+                        transport_vars[(wh1['id'], wh2['id'], product['id'])] = LpVariable(var_name, 0, None)
+
+        # Objective function: minimize total inventory holding costs
+        holding_costs = []
+        for warehouse in warehouses:
+            for product in products:
+                holding_cost = product.get('holding_cost', 1.0)  # Default holding cost
+                holding_costs.append(holding_cost * inventory_vars[(warehouse['id'], product['id'])])
+
+        prob += lpSum(holding_costs)
+
+        # Constraints
+        for warehouse in warehouses:
+            for product in products:
+                wh_id = warehouse['id']
+                prod_id = product['id']
+                
+                # Demand satisfaction constraint
+                demand = demand_forecasts.get(prod_id, {}).get(wh_id, 0)
+                
+                # Inventory balance
+                inflows = [transport_vars.get((other_wh['id'], wh_id, prod_id), 0) for other_wh in warehouses if other_wh['id'] != wh_id]
+                outflows = [transport_vars.get((wh_id, other_wh['id'], prod_id), 0) for other_wh in warehouses if other_wh['id'] != wh_id]
+                
+                prob += inventory_vars[(wh_id, prod_id)] + lpSum(inflows) - lpSum(outflows) >= demand
+
+        # Solve the problem
+        status = prob.solve()
+
+        if LpStatus[status] == 'Optimal':
+            # Extract results
+            optimal_inventory = {}
+            for warehouse in warehouses:
+                optimal_inventory[warehouse['id']] = {}
+                for product in products:
+                    optimal_inventory[warehouse['id']][product['id']] = value(inventory_vars[(warehouse['id'], product['id'])])
+
+            total_cost = value(prob.objective)
+
+            return {
+                'success': True,
+                'status': 'Optimal solution found',
+                'optimal_inventory_levels': optimal_inventory,
+                'total_holding_cost': total_cost,
+                'optimization_details': {
+                    'warehouses_optimized': len(warehouses),
+                    'products_optimized': len(products),
+                    'constraints_added': len(prob.constraints)
+                }
+            }
+        else:
+            return {
+                'success': False,
+                'error': f'Optimization failed with status: {LpStatus[status]}'
+            }
