@@ -26,6 +26,17 @@ class ApiService {
     }
   }
 
+  static async getEtaEstimates(token) {
+    try {
+      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const response = await axios.get(`${API_BASE_URL}/api/eta-estimates`, config);
+      return response.data;
+    } catch (error) {
+      console.error('Error fetching ETA estimates:', error);
+      throw error;
+    }
+  }
+
   static async login(credentials) {
     try {
       const response = await axios.post(`${API_BASE_URL}/api/login`, credentials);
@@ -62,8 +73,12 @@ class ApiService {
 
   static async getDemandForecast(productId, token) {
     try {
+      const parsedProductId = parseInt(productId, 10);
+      if (isNaN(parsedProductId)) {
+        throw new Error('Invalid product ID');
+      }
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.get(`${API_BASE_URL}/api/demand-forecast/${productId}`, config);
+      const response = await axios.get(`${API_BASE_URL}/api/demand-forecast/${parsedProductId}`, config);
       return response.data;
     } catch (error) {
       console.error('Error fetching demand forecast:', error);
@@ -73,11 +88,74 @@ class ApiService {
 
   static async retrainDemandModel(productId, token, driftThreshold = 0.1) {
     try {
+      const parsedProductId = parseInt(productId, 10);
+      if (isNaN(parsedProductId)) {
+        throw new Error('Invalid product ID');
+      }
+      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const response = await axios.post(`${API_BASE_URL}/api/retrain-demand-model/${parsedProductId}`, { drift_threshold: driftThreshold }, config);
+      return response.data;
+    } catch (error) {
+      console.error('Error retraining demand model:', error);
+      throw error;
+    }
+  }
+
+  static async getInventoryAnalysis(token) {
+    try {
+      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const response = await axios.get(`${API_BASE_URL}/api/inventory/analysis`, config);
+      return response.data;
+    } catch (error) {
+      console.error('Error fetching inventory analysis:', error);
+      throw error;
+    }
+  }
+
+  static async getFuturisticMetrics(token) {
+    try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
       const response = await axios.get(`${API_BASE_URL}/api/futuristic-inventory/metrics`, config);
       return response.data;
     } catch (error) {
       console.error('Error fetching futuristic metrics:', error);
+      throw error;
+    }
+  }
+
+  static async getLogisticsRoutes(token) {
+    try {
+      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const response = await axios.get(`${API_BASE_URL}/api/logistics-routes`, config);
+      return response.data;
+    } catch (error) {
+      console.error('Error fetching logistics routes:', error);
+      throw error;
+    }
+  }
+
+  static async optimizeRoute(routeId, criteria, token) {
+    try {
+      const parsedRouteId = parseInt(routeId, 10);
+      if (isNaN(parsedRouteId)) {
+        throw new Error('Invalid route ID');
+      }
+      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const response = await axios.post(`${API_BASE_URL}/api/optimize-route/${parsedRouteId}`, { optimization_criteria: criteria }, config);
+      return response.data;
+    } catch (error) {
+      console.error('Error optimizing route:', error);
+      throw error;
+    }
+  }
+
+  static async implementOptimization(data, token) {
+    try {
+      const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+      const response = await axios.post(`${API_BASE_URL}/api/implement-optimization`, data, config);
+      return response.data;
+    } catch (error) {
+      console.error('Error implementing optimization:', error);
       throw error;
     }
   }
