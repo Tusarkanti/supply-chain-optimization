@@ -104,7 +104,7 @@ class ApiService {
   static async getInventoryAnalysis(token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.get(`${API_BASE_URL}/api/inventory/analysis`, config);
+      const response = await axios.get(`${API_BASE_URL}/api/inventory-analysis`, config);
       return response.data;
     } catch (error) {
       console.error('Error fetching inventory analysis:', error);
