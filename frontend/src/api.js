@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 // Use environment variable for API URL, fallback to localhost for development
-const API_BASE_URL = process.env.REACT_APP_API_URL || '${API_BASE_URL}';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://supply-chain-optimization-2.onrender.com';
 
 class ApiService {
   static async getDashboardMetrics(token) {
@@ -19,7 +19,7 @@ class ApiService {
   static async getDashboardData(token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.get('${API_BASE_URL}/api/dashboard/data', config);
+      const response = await axios.get(`${API_BASE_URL}/api/dashboard/data`, config);
       return response.data;
     } catch (error) {
       console.error('Error fetching dashboard data:', error);
@@ -29,7 +29,7 @@ class ApiService {
 
   static async login(credentials) {
     try {
-      const response = await axios.post('${API_BASE_URL}/api/login', credentials);
+      const response = await axios.post(`${API_BASE_URL}/api/login`, credentials);
       return response.data;
     } catch (error) {
       console.error('Error logging in:', error);
@@ -42,7 +42,7 @@ class ApiService {
 
   static async register(userData) {
     try {
-      const response = await axios.post('${API_BASE_URL}/api/register', userData);
+      const response = await axios.post(`${API_BASE_URL}/api/register`, userData);
       return response.data;
     } catch (error) {
       console.error('Error registering:', error);
@@ -53,7 +53,7 @@ class ApiService {
   static async getProducts(token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.get('${API_BASE_URL}/api/products', config);
+      const response = await axios.get(`${API_BASE_URL}/api/products`, config);
       return response.data;
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -86,7 +86,7 @@ class ApiService {
   static async getInventoryAnalysis(token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.get('${API_BASE_URL}/api/inventory-analysis', config);
+      const response = await axios.get(`${API_BASE_URL}/api/inventory-analysis`, config);
       return response.data;
     } catch (error) {
       console.error('Error fetching inventory analysis:', error);
@@ -97,7 +97,7 @@ class ApiService {
   static async placeOrder(orderData, token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post('${API_BASE_URL}/api/place-order', orderData, config);
+      const response = await axios.post(`${API_BASE_URL}/api/place-order`, orderData, config);
       return response.data;
     } catch (error) {
       console.error('Error placing order:', error);
@@ -108,7 +108,7 @@ class ApiService {
   static async getLogisticsRoutes(token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.get('${API_BASE_URL}/api/logistics-routes', config);
+      const response = await axios.get(`${API_BASE_URL}/api/logistics-routes`, config);
       return response.data;
     } catch (error) {
       console.error('Error fetching logistics routes:', error);
@@ -130,7 +130,7 @@ class ApiService {
   static async implementOptimization(optimizationData, token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post('${API_BASE_URL}/api/implement-optimization', optimizationData, config);
+      const response = await axios.post(`${API_BASE_URL}/api/implement-optimization`, optimizationData, config);
       return response.data;
     } catch (error) {
       console.error('Error implementing optimization:', error);
@@ -152,7 +152,7 @@ class ApiService {
   static async multiEchelonOptimize(optimizationData, token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post('${API_BASE_URL}/api/inventory/multi-echelon-optimize', optimizationData, config);
+      const response = await axios.post(`${API_BASE_URL}/api/inventory/multi-echelon-optimize`, optimizationData, config);
       return response.data;
     } catch (error) {
       console.error('Error performing multi-echelon optimization:', error);
@@ -163,7 +163,7 @@ class ApiService {
   static async sendReorderAlert(alertData, token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post('${API_BASE_URL}/api/inventory/send-reorder-alert', alertData, config);
+      const response = await axios.post(`${API_BASE_URL}/api/inventory/send-reorder-alert`, alertData, config);
       return response.data;
     } catch (error) {
       console.error('Error sending reorder alert:', error);
@@ -174,7 +174,7 @@ class ApiService {
   static async getEtaEstimates(token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.get('${API_BASE_URL}/api/eta-estimates', config);
+      const response = await axios.get(`${API_BASE_URL}/api/eta-estimates`, config);
       return response.data;
     } catch (error) {
       console.error('Error fetching ETA estimates:', error);
@@ -185,7 +185,7 @@ class ApiService {
   static async getFuturisticMetrics(token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.get('${API_BASE_URL}/api/futuristic-inventory/metrics', config);
+      const response = await axios.get(`${API_BASE_URL}/api/futuristic-inventory/metrics`, config);
       return response.data;
     } catch (error) {
       console.error('Error fetching futuristic metrics:', error);
@@ -196,7 +196,7 @@ class ApiService {
   static async optimizeSustainability(optimizationData, token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post('${API_BASE_URL}/api/futuristic-inventory/sustainability-optimize', optimizationData, config);
+      const response = await axios.post(`${API_BASE_URL}/api/futuristic-inventory/sustainability-optimize`, optimizationData, config);
       return response.data;
     } catch (error) {
       console.error('Error optimizing sustainability:', error);
@@ -207,7 +207,7 @@ class ApiService {
   static async assessSupplyChainRisks(riskData, token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post('${API_BASE_URL}/api/futuristic-inventory/risk-assessment', riskData, config);
+      const response = await axios.post(`${API_BASE_URL}/api/futuristic-inventory/risk-assessment`, riskData, config);
       return response.data;
     } catch (error) {
       console.error('Error assessing supply chain risks:', error);
@@ -218,7 +218,7 @@ class ApiService {
   static async predictDemandWithAI(predictionData, token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post('${API_BASE_URL}/api/futuristic-inventory/predict-demand', predictionData, config);
+      const response = await axios.post(`${API_BASE_URL}/api/futuristic-inventory/predict-demand`, predictionData, config);
       return response.data;
     } catch (error) {
       console.error('Error predicting demand with AI:', error);
@@ -229,7 +229,7 @@ class ApiService {
   static async integrateIoTData(iotData, token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post('${API_BASE_URL}/api/futuristic-inventory/iot-integration', iotData, config);
+      const response = await axios.post(`${API_BASE_URL}/api/futuristic-inventory/iot-integration`, iotData, config);
       return response.data;
     } catch (error) {
       console.error('Error integrating IoT data:', error);
@@ -240,7 +240,7 @@ class ApiService {
   static async makeAutonomousDecisions(decisionData, token) {
     try {
       const config = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
-      const response = await axios.post('${API_BASE_URL}/api/futuristic-inventory/autonomous-decisions', decisionData, config);
+      const response = await axios.post(`${API_BASE_URL}/api/futuristic-inventory/autonomous-decisions`, decisionData, config);
       return response.data;
     } catch (error) {
       console.error('Error making autonomous decisions:', error);
