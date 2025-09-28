@@ -12,8 +12,9 @@ services:
   - type: web
     name: supply-chain-backend
     env: python
-    buildCommand: "cd ml-service && pip install --upgrade pip setuptools wheel && pip install -r requirements.txt"
-    startCommand: "cd ml-service && gunicorn --bind 0.0.0.0:$PORT --workers 4 --worker-class gunicorn.workers.gfg app:app"
+    rootDir: ml-service
+    buildCommand: "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt"
+    startCommand: "gunicorn --bind 0.0.0.0:$PORT --workers 4 --worker-class eventlet app:app"
     envVars:
       - key: PYTHON_VERSION
         value: 3.13.4
