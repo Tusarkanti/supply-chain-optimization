@@ -38,8 +38,9 @@ services:
   - type: web
     name: supply-chain-frontend
     env: static
-    buildCommand: "cd frontend && npm install && npm run build"
-    staticPublishPath: frontend/build
+    rootDir: frontend
+    buildCommand: "npm install && npm run build"
+    staticPublishPath: build
     envVars:
       - key: REACT_APP_API_URL
         fromService:
