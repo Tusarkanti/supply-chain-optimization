@@ -26,9 +26,9 @@ services:
       - key: FLASK_ENV
         value: production
       - key: JWT_SECRET_KEY
-        generateValue: true
+        value: "supply-chain-jwt-secret-key-2024-very-secure-and-fixed-for-production-use-only-do-not-share"
       - key: SECRET_KEY
-        generateValue: true
+        value: "supply-chain-secret-key-2024-very-secure-and-fixed-for-production-use-only-do-not-share"
       - key: DEBUG
         value: false
       - key: PORT
