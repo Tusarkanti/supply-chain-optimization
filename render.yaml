@@ -13,11 +13,11 @@ services:
     name: supply-chain-backend
     env: python
     rootDir: ml-service  # ← This was missing!
-    buildCommand: "pip install -r requirements.txt"  # ← Remove ml-service/ prefix
+    buildCommand: "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt && pip install -r requirements_updated.txt"
     startCommand: "gunicorn --bind 0.0.0.0:$PORT --workers 4 --worker-class gunicorn.workers.gfg app:app"
     envVars:
       - key: PYTHON_VERSION
-        value: 3.9.18
+        value: 3.12.0
       - key: DATABASE_URL
         fromService:
           type: pserv
@@ -26,6 +26,8 @@ services:
       - key: FLASK_ENV
         value: production
       - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: SECRET_KEY
         generateValue: true
       - key: DEBUG
         value: false

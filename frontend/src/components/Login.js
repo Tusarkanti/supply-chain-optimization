@@ -315,6 +315,10 @@ function Login({ onLogin }) {
           </div>
         </div>
       </div>
+
+      <footer className="login-footer">
+        <p>DEDICATED TO THE DEAREST FRD BUDDI 🥰</p>
+      </footer>
     </div>
   );
 }

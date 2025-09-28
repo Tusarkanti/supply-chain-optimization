@@ -101,6 +101,7 @@ function App() {
 
       <footer className="app-footer">
         <p>&copy; 2025 Supply Chain Optimization System. All rights reserved.</p>
+        <p>DEDICATED TO THE DEAREST FRD BUDDI 🥰</p>
       </footer>
     </div>
   );

@@ -1,4 +1,8 @@
 # Core Flask and Web Framework
+pip>=23.2
+setuptools>=68.0
+wheel
+
 Flask==2.3.3
 Flask-CORS==4.0.0
 Flask-SQLAlchemy==3.0.5
