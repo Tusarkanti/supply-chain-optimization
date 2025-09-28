@@ -782,3 +782,6 @@
 2025-09-29 03:54:31,349 - supply_chain_main - INFO - <module>:120 - Initializing Supply Chain Optimization System
 2025-09-29 03:54:31,422 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-29T03:54:31.422664"}
 2025-09-29 03:54:31,445 - supply_chain_main - INFO - <module>:1225 - Starting Supply Chain Optimization System with WebSocket
+2025-09-29 04:06:40,206 - supply_chain_main - INFO - <module>:112 - Initializing Supply Chain Optimization System
+2025-09-29 04:06:40,285 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-29T04:06:40.285526"}
+2025-09-29 04:06:40,309 - supply_chain_main - INFO - <module>:1217 - Starting Supply Chain Optimization System with WebSocket
