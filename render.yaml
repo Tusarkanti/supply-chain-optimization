@@ -43,9 +43,6 @@ services:
     staticPublishPath: build
     envVars:
       - key: REACT_APP_API_URL
-        fromService:
-          type: web
-          name: supply-chain-backend
-          property: host
+        value: "https://supply-chain-optimization-2.onrender.com"
       - key: NODE_ENV
         value: production
