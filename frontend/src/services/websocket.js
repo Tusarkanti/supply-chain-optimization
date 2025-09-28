@@ -1,7 +1,6 @@
 import { io } from 'socket.io-client';
 
-// Use environment variable for API URL, fallback to localhost for development
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://supply-chain-optimization-2.onrender.com';
 
 class WebSocketService {
   constructor() {

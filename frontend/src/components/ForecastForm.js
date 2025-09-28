@@ -24,7 +24,7 @@ function ForecastForm({ token }) {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:5000/api/forecast/train', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL || 'https://supply-chain-optimization-2.onrender.com'}/api/forecast/train`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -60,7 +60,7 @@ function ForecastForm({ token }) {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:5000/api/forecast/predict', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL || 'https://supply-chain-optimization-2.onrender.com'}/api/forecast/predict`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

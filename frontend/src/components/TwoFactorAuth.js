@@ -12,7 +12,7 @@ function TwoFactorAuth({ onVerify, onCancel }) {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:5000/api/verify-2fa', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL || 'https://supply-chain-optimization-2.onrender.com'}/api/verify-2fa`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

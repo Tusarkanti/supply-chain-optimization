@@ -68,7 +68,7 @@ function InventoryTable({ token }) {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:5000/api/inventory/analyze', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL || 'https://supply-chain-optimization-2.onrender.com'}/api/inventory/analyze`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
