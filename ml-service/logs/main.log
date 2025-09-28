@@ -768,3 +768,14 @@
 2025-09-29 00:28:23,618 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-29T00:28:23.617994"}
 2025-09-29 00:28:23,650 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-29T00:28:23.650182"}
 2025-09-29 00:28:23,930 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-29T00:28:23.930663"}
+2025-09-29 03:44:01,496 - supply_chain_main - INFO - <module>:120 - Initializing Supply Chain Optimization System
+2025-09-29 03:44:01,553 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-29T03:44:01.553490"}
+2025-09-29 03:44:01,565 - supply_chain_main - INFO - <module>:1236 - Starting Supply Chain Optimization System with WebSocket
+2025-09-29 03:44:06,329 - supply_chain_main - INFO - <module>:120 - Initializing Supply Chain Optimization System
+2025-09-29 03:44:06,362 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-29T03:44:06.362074"}
+2025-09-29 03:44:06,372 - supply_chain_main - INFO - <module>:1236 - Starting Supply Chain Optimization System with WebSocket
+2025-09-29 03:52:44,209 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: demo@supplychain.com", "context": "authentication", "timestamp": "2025-09-29T03:52:44.209181"}
+2025-09-29 03:53:22,738 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: demo@supplychain.com", "context": "authentication", "timestamp": "2025-09-29T03:53:22.737998"}
+2025-09-29 03:54:20,638 - supply_chain_main - INFO - <module>:120 - Initializing Supply Chain Optimization System
+2025-09-29 03:54:20,716 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-29T03:54:20.716492"}
+2025-09-29 03:54:20,741 - supply_chain_main - INFO - <module>:1231 - Starting Supply Chain Optimization System with WebSocket

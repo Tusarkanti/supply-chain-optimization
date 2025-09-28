@@ -78,7 +78,15 @@ except ImportError as e:
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_object(get_config())
 print("App config URI:", app.config['SQLALCHEMY_DATABASE_URI'])
-CORS(app)
+CORS(app, resources={
+    r"/*": {
+        "origins": ["https://supply-chain-optimization-v93t.onrender.com", "http://localhost:3000"],
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization", "X-Requested-With"],
+        "expose_headers": ["Link"],
+        "supports_credentials": True
+    }
+})
 db.init_app(app)
 jwt = JWTManager(app)
 socketio = SocketIO(app, cors_allowed_origins="*", async_mode='threading')
@@ -218,12 +226,7 @@ def login():
         print("Creating access token")
         access_token = create_access_token(
             identity=user.email,
-            expires_delta=timedelta(hours=24),
-            additional_claims={
-                'user_id': user.id,
-                'name': user.name,
-                'two_factor_enabled': user.two_factor_enabled
-            }
+            expires_delta=timedelta(hours=24)
         )
         print("Token created successfully")
         logger.log_info(f"Successful login for user: {email}", 'authentication')
@@ -1099,13 +1102,7 @@ def verify_2fa():
         if code == '123456':
             access_token = create_access_token(
                 identity=user.email,
-                expires_delta=timedelta(hours=24),
-                additional_claims={
-                    'user_id': user.id,
-                    'name': user.name,
-                    'two_factor_enabled': user.two_factor_enabled,
-                    '2fa_verified': True
-                }
+                expires_delta=timedelta(hours=24)
             )
             return jsonify({
                 'success': True,
