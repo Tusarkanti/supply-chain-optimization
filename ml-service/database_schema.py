@@ -272,19 +272,16 @@ class User(db.Model):
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
     def set_password(self, password):
-        """Set password hash using passlib"""
-        from passlib.hash import bcrypt
-        self.password_hash = bcrypt.hash(password)
+        """Set password hash using werkzeug"""
+        from werkzeug.security import generate_password_hash
+        self.password_hash = generate_password_hash(password)
 
     def check_password(self, password):
         """Check password against hash"""
         if not self.password_hash:
             return False
-        from passlib.hash import bcrypt
-        try:
-            return bcrypt.verify(password, self.password_hash)
-        except ValueError:
-            return False
+        from werkzeug.security import check_password_hash
+        return check_password_hash(self.password_hash, password)
 
     def generate_two_factor_secret(self):
         """Generate a random secret for 2FA"""

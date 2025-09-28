@@ -81,7 +81,7 @@ print("App config URI:", app.config['SQLALCHEMY_DATABASE_URI'])
 CORS(app)
 db.init_app(app)
 jwt = JWTManager(app)
-socketio = SocketIO(app, cors_allowed_origins="*")
+socketio = SocketIO(app, cors_allowed_origins="*", async_mode='threading')
 limiter = Limiter(app=app, key_func=get_remote_address, default_limits=["1000 per day", "200 per hour"])
 
 # Initialize ML modules
