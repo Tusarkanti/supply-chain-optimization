@@ -13,11 +13,11 @@ services:
     name: supply-chain-backend
     env: python
     rootDir: ml-service  # ← This was missing!
-    buildCommand: "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt && pip install -r requirements_updated.txt"
+    buildCommand: "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt"
     startCommand: "gunicorn --bind 0.0.0.0:$PORT --workers 4 --worker-class gunicorn.workers.gfg app:app"
     envVars:
       - key: PYTHON_VERSION
-        value: 3.12.0
+        value: 3.13.4
       - key: DATABASE_URL
         fromService:
           type: pserv
