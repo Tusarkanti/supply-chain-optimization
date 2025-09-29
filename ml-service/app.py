@@ -78,15 +78,17 @@ except ImportError as e:
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_object(get_config())
 print("App config URI:", app.config['SQLALCHEMY_DATABASE_URI'])
-CORS(app, resources={
-    r"/*": {
-        "origins": ["https://supply-chain-frontend.onrender.com", "https://supply-chain-optimization-v93t.onrender.com", "http://localhost:3000"],
-        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-        "allow_headers": ["Content-Type", "Authorization", "X-Requested-With"],
-        "expose_headers": ["Link"],
-        "supports_credentials": True
-    }
-})
+CORS(app, resources={r"/*": {
+    "origins": [
+        "https://supply-chain-frontend.onrender.com",
+        "https://supply-chain-optimization-v93t.onrender.com",
+        "http://localhost:3000"
+    ],
+    "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    "allow_headers": ["Content-Type", "Authorization", "X-Requested-With"],
+    "expose_headers": ["Link"],
+    "supports_credentials": True
+}})
 db.init_app(app)
 jwt = JWTManager(app)
 socketio = SocketIO(app, cors_allowed_origins="*", async_mode='threading')
