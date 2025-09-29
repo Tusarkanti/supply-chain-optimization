@@ -1,23 +1,28 @@
-# Login Issue Correction Plan
+# Supply Chain Optimization - API URL Configuration Fix
 
-## Tasks
-- [x] Remove account locking check from login endpoint in ml-service/app.py
-- [x] Remove failed attempt increment logic from login endpoint
-- [x] Fix password hashing consistency (use passlib for both set and check)
-- [x] Reset admin password with consistent hashing
-- [x] Test login functionality after changes
-- [x] Unlock any currently locked accounts using unlock_admin.py
+## Completed Tasks
 
-## Information Gathered
-- Login system had account locking after 5 failed attempts for 15 minutes
-- User model had account_locked, failed_login_attempts, lockout_until fields
-- Login endpoint checked for lock and incremented attempts on wrong password
-- Password hashing was inconsistent: set_password used werkzeug, check_password used passlib
-- This caused login failures even with correct credentials
+### 1. Create .env file for local development
+- **Status**: ✅ Completed
+- **Description**: Created `frontend/.env` with `REACT_APP_API_URL=http://localhost:5000` for local development
+- **Files Modified**: `frontend/.env`
 
-## Plan
-- Modify /api/login endpoint to remove is_account_locked() check
-- Remove increment_failed_attempts() call on wrong password
-- Update set_password() to use passlib for consistency
-- Reset admin password to use consistent hashing
-- Run unlock script to unlock any existing locked accounts
+### 2. Update CORS origins in backend
+- **Status**: ✅ Completed
+- **Description**: Updated CORS in `ml-service/app.py` to allow both default Render URLs and custom domain
+- **Files Modified**: `ml-service/app.py`
+- **Changes**: Added "https://supply-chain-frontend.onrender.com" to allowed origins
+
+### 3. Verify production configuration
+- **Status**: ✅ Verified
+- **Description**: Confirmed `render.yaml` has correct `REACT_APP_API_URL=https://supply-chain-optimization-2.onrender.com` for production
+
+## Summary
+
+The API URL configuration issue has been resolved:
+
+- **Local Development**: Frontend now uses `http://localhost:5000` via `.env` file
+- **Production**: Frontend uses `https://supply-chain-optimization-2.onrender.com` via Render environment variable
+- **CORS**: Backend allows requests from both default Render frontend URL and any custom domains
+
+The application should now work correctly in both local and production environments.
