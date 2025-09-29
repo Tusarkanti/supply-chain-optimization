@@ -788,3 +788,20 @@
 2025-09-29 04:09:57,909 - supply_chain_main - INFO - <module>:120 - Initializing Supply Chain Optimization System
 2025-09-29 04:09:57,989 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-29T04:09:57.989192"}
 2025-09-29 04:09:58,017 - supply_chain_main - INFO - <module>:1225 - Starting Supply Chain Optimization System with WebSocket
+2025-09-29 11:27:18,686 - supply_chain_main - INFO - <module>:120 - Initializing Supply Chain Optimization System
+2025-09-29 11:27:18,779 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-29T11:27:18.779084"}
+2025-09-29 11:27:18,802 - supply_chain_main - INFO - <module>:1225 - Starting Supply Chain Optimization System with WebSocket
+2025-09-29 11:27:26,505 - supply_chain_main - INFO - <module>:120 - Initializing Supply Chain Optimization System
+2025-09-29 11:27:26,582 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demo data already exists, skipping seeding", "context": "database", "timestamp": "2025-09-29T11:27:26.582785"}
+2025-09-29 11:27:26,610 - supply_chain_main - INFO - <module>:1225 - Starting Supply Chain Optimization System with WebSocket
+2025-09-29 13:36:36,035 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Successful login for user: admin@supplychain.com", "context": "authentication", "timestamp": "2025-09-29T13:36:36.034941"}
+2025-09-29 13:36:36,479 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-29T13:36:36.479597"}
+2025-09-29 13:36:36,783 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-29T13:36:36.783003"}
+2025-09-29 13:36:36,953 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-29T13:36:36.953137"}
+2025-09-29 13:36:37,093 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-29T13:36:37.093513"}
+2025-09-29 13:36:55,241 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Generating demand forecast for product 1, horizon 30, country US", "context": "demand_forecast", "timestamp": "2025-09-29T13:36:55.241711"}
+2025-09-29 13:36:56,764 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Demand forecast generated and cached for product 1", "context": "demand_forecast", "timestamp": "2025-09-29T13:36:56.764170"}
+2025-09-29 13:37:00,968 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-29T13:37:00.968319"}
+2025-09-29 13:37:01,277 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-29T13:37:01.277730"}
+2025-09-29 13:37:01,279 - supply_chain_main - INFO - log_info:113 - Info: {"message": "Dashboard metrics fetched for user: admin@supplychain.com", "context": "dashboard_metrics", "timestamp": "2025-09-29T13:37:01.279074"}
+2025-09-29 13:37:01,589 - supply_chain_main - INFO - log_info:113 - Info: {"message": "ETA estimates fetched for user: admin@supplychain.com", "context": "eta_estimates", "timestamp": "2025-09-29T13:37:01.589591"}
