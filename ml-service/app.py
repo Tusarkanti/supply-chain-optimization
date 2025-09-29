@@ -1,13 +1,12 @@
-# ml-service/app.py (with added debug print for config URI)
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
-from flask_jwt_extended import JWTManager, jwt_required, create_access_token, get_jwt_identity, verify_jwt_in_request
-from flask_socketio import SocketIO, emit, ConnectionRefusedError
+from flask_jwt_extended import JWTManager
+from flask_socketio import SocketIO
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
-import os
 from datetime import datetime, timedelta
+import os
 import logging
 import re
 
@@ -25,74 +24,51 @@ try:
     from enhanced_iot_integration import EnhancedIoTIntegrationModule
     enhanced_available = True
     ML_MODULES_AVAILABLE = True
-    # Import RouteStop from basic module as fallback
-    try:
-        from logistics_optimization import RouteStop as RouteStopDataClass
-    except ImportError:
-        RouteStopDataClass = object
 except ImportError as e:
     print(f"Enhanced ML modules not available: {e}")
     enhanced_available = False
-    try:
-        from demand_forecasting import EnhancedDemandForecastingModule
-        from inventory_management import InventoryManagementModule as EnhancedInventoryManagementModule
-        from logistics_optimization import LogisticsOptimizationModule as EnhancedLogisticsOptimizationModule, RouteStop as RouteStopDataClass
-        from enhanced_detection import EnhancedDetectionModule as EnhancedIoTIntegrationModule
-        print("Falling back to basic ML modules")
-        ML_MODULES_AVAILABLE = True
-    except ImportError as e2:
-        print(f"Basic ML modules not available: {e2}")
-        ML_MODULES_AVAILABLE = False
+    ML_MODULES_AVAILABLE = False
+    # Fallback dummy classes
+    class EnhancedDemandForecastingModule:
+        def __init__(self): self.models = {}
+        def train_models(self, *args, **kwargs): return {"status": "ML not available"}
+        def predict_demand_with_confidence(self, *args, **kwargs): return {"status": "ML not available"}
+        def retrain_models_automated(self, *args, **kwargs): return {"retrained": False, "status": "ML not available"}
 
-        class EnhancedDemandForecastingModule:
-            def __init__(self):
-                self.models = {}
+    class EnhancedInventoryManagementModule:
+        def analyze_inventory_levels(self, *args, **kwargs): return {'recommendations': []}
+        def generate_inventory_report(self, *args, **kwargs): return {"status": "ML not available"}
 
-            def train_models(self, *args, **kwargs): return {"status": "ML not available"}
-            def predict_demand_with_confidence(self, *args, **kwargs): return {"status": "ML not available"}
-            def retrain_models_automated(self, *args, **kwargs): return {"retrained": False, "status": "ML not available"}
-            def load_and_preprocess_data(self, *args, **kwargs):
-                try:
-                    import pandas as pd
-                    return pd.DataFrame()
-                except ImportError:
-                    return None
-            def train_advanced_models(self, data, *args, **kwargs): return {"status": "ML not available", "models_trained": False}
-            def get_forecast_summary(self, *args, **kwargs): return {"status": "ML not available"}
+    class EnhancedLogisticsOptimizationModule:
+        def optimize_routes(self, *args, **kwargs): return {"success": False, "message": "ML not available"}
+        def generate_route_report(self, *args, **kwargs): return {"status": "ML not available"}
 
-        class EnhancedInventoryManagementModule:
-            def analyze_inventory_levels(self, *args, **kwargs): return {'recommendations': []}
-            def generate_inventory_report(self, *args, **kwargs): return {"status": "ML not available"}
+    class EnhancedIoTIntegrationModule:
+        def predict_anomalies(self, *args, **kwargs): return []
+        def get_anomaly_report(self, *args, **kwargs): return {"status": "ML not available"}
 
-        class EnhancedLogisticsOptimizationModule:
-            def optimize_routes(self, *args, **kwargs): return {"success": False, "message": "ML not available"}
-            def generate_route_report(self, *args, **kwargs): return {"status": "ML not available"}
-
-        class EnhancedIoTIntegrationModule:
-            def predict_anomalies(self, *args, **kwargs): return []
-            def get_anomaly_report(self, *args, **kwargs): return {"status": "ML not available"}
-
-        RouteStopDataClass = object
-
+# -------------------------------
 # Initialize Flask app
+# -------------------------------
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_object(get_config())
 print("App config URI:", app.config['SQLALCHEMY_DATABASE_URI'])
-CORS(app, resources={r"/*": {
-    "origins": [
-        "https://supply-chain-frontend.onrender.com",
-        "https://supply-chain-optimization-v93t.onrender.com",
-        "http://localhost:3000"
-    ],
-    "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    "allow_headers": ["Content-Type", "Authorization", "X-Requested-With"],
-    "expose_headers": ["Link"],
-    "supports_credentials": True
-}})
+
+# Enable CORS (all origins for deployment)
+CORS(app, resources={r"/*": {"origins": "*"}})
+
+# Initialize extensions
 db.init_app(app)
 jwt = JWTManager(app)
 socketio = SocketIO(app, cors_allowed_origins="*", async_mode='threading')
 limiter = Limiter(app=app, key_func=get_remote_address, default_limits=["1000 per day", "200 per hour"])
+
+# Initialize ML modules
+demand_forecaster = EnhancedDemandForecastingModule()
+inventory_manager = EnhancedInventoryManagementModule()
+logistics_optimizer = EnhancedLogisticsOptimizationModule()
+anomaly_detector = EnhancedIoTIntegrationModule()
+
 
 # Initialize ML modules
 demand_forecaster = EnhancedDemandForecastingModule()
