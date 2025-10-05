@@ -14,7 +14,9 @@ services:
     env: python
     rootDir: ml-service
     buildCommand: "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt"
-    startCommand: "gunicorn --chdir ml-service --bind 0.0.0.0:$PORT --workers 4 --worker-class gthread app:app"
+   # startCommand: "gunicorn --chdir ml-service --bind 0.0.0.0:$PORT --workers 4 --worker-class gthread app:app"
+    startCommand: "gunicorn --chdir ml-service app:app --bind 0.0.0.0:$PORT --worker-class eventlet -w 1 --timeout 120"
+
     envVars:
       - key: PYTHON_VERSION
         value: 3.13.4
